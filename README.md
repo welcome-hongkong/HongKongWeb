@@ -1,5 +1,5 @@
 # HongKong-project
 
-Github pages för projectet
+Github pages för projektet
 
 ## Här kommer den senaste av sidan vara hostad
