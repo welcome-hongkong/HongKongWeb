@@ -6,3 +6,4 @@ function scrollToTop() {
         behavior: 'smooth'
       });
 }
+
