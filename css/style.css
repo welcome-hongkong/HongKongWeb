@@ -1,11 +1,4 @@
-#background-image {
-    width: 100vw;
-    height: 20vh;
-    
-    aspect-ratio: 1/1;
-    object-fit: cover;
 
-}
 html {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,23 +12,29 @@ html {
 header {
     display: flex;
     width: 100%;
+    max-height: 20vh;
+    justify-content: center;
     background-color: blue;
+    position: relative;
 }
-header .logo {
-    width: 20%;
+
+.logo {
     height: 100%;
-    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 nav {
     display: flex;
     background-color: black;
-    padding: 1em;
-    /* min-height: 100px; */
+    height: 100%;
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
 }
-nav span {
+
+/* nav span {
     background-color: black;
     display: block;
     width: max-content;
@@ -60,7 +59,7 @@ nav span:hover::after {
 }
 nav span:hover {
     background-color: burlywood;
-}
+} */
 
 
 
@@ -71,10 +70,12 @@ article {
     color: white;
     font-size: 2em;
 }
+
 article h1 {
     font-size: 3em;
     font-weight: bold;
 }
+
 .sights-container {
     display: flex;
     flex-direction: column;
@@ -86,16 +87,18 @@ article h1 {
     height: max-content;
     padding-bottom: 10em;
     gap: 2em;
-    
-    
+
+
 
 }
+
 .sights-container h1 {
     color: white;
     font-size: x-large;
     text-align: center;
     flex: 0 0 100%;
 }
+
 .sightlink {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: block;
@@ -104,6 +107,7 @@ article h1 {
     transform: scale(1);
     transition: transform 0.2s ease-out;
 }
+
 .sightlink a {
 
     display: block;
@@ -115,16 +119,19 @@ article h1 {
     background-position: center;
     min-height: 300px;
 }
+
 .sightlink:hover {
     transform: scale(1.08);
     transition: transform 0.2s ease-in-out;
 
 }
+
 .sightlink a:hover {
     filter: blur(2px);
 }
+
 .sightlink h1 {
-    
+
     padding: 1.5em;
     display: block;
     background-color: #333;
@@ -140,21 +147,23 @@ article h1 {
     height: var(--scrollbtn-size);
     background-color: #333;
     color: white;
-    
+
     padding: 0.5em;
     cursor: pointer;
 }
 
-#sight-card-1 a{
+#sight-card-1 a {
     background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg);
     background-size: cover;
 }
-#sight-card-2 a{
+
+#sight-card-2 a {
     background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-hong-kong-park-pond.jpg);
     background-size: cover;
     background-position: right center;
 }
-#sight-card-3 a{
+
+#sight-card-3 a {
     background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-big-buddha-and-forest.jpg);
     background-size: cover;
     background-position: 70%;
@@ -176,16 +185,47 @@ article h1 {
     background-color: cadetblue;
 }
 
+.Main-nav-button {
+    padding: 1.5em;
+    display: inline-block;
+
+}
+
+.Main-nav-button a {
+    position: relative;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+}
+
+.Main-nav-button a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0) scaleY(1);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-in-out;
+}
+
+.Main-nav-button a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 @media screen and (min-width: 1024px) {
     .sights-container {
         flex-direction: row;
         flex-wrap: wrap;
 
     }
+
     .sightlink {
         flex-basis: 30%;
         height: 90%;
     }
-    
+
 }
-    
