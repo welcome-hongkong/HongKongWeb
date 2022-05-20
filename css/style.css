@@ -1,6 +1,6 @@
 
 html {
-    font-size: 2.5vmin;  /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
+    font-size: 1vmin;  /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
 
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -39,7 +39,7 @@ header {
 /* ---------------- Header -------------- */
 
 .logo img {
-    height: 25vmin;
+    height: 10vmin;
     top: 0;
     left: 0;
     filter: brightness(0) invert(1);
@@ -50,7 +50,7 @@ header {
     align-items: center;
 }
 .logo figcaption  {
-    font-size: 10vmin;
+    font-size: 5em;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px #000000; 
@@ -107,7 +107,7 @@ article {
     padding: 1em;
     min-width: 50vw;
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 
@@ -245,8 +245,8 @@ footer p {
         /* flex-wrap: nowrap; */
         
     }
-    article {
-        font-size: 1.5rem;
+    html {
+        font-size: 0.7rem;
     }
     header {
         margin: 0;
