@@ -1,7 +1,12 @@
 
 html {
-    font-size: 100%;
+    font-size: 1vmin;  /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
+
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    min-width: 250px;
 }
 
 .active {
@@ -13,73 +18,125 @@ header {
     display: flex;
     width: 100%;
     max-height: 20vh;
+    height: fit-content;
     justify-content: center;
-    background-color: blue;
+    background-color: #EE1C25;
     position: relative;
 }
-
-.logo {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+* h1 {
+    /* font-size: 15vmin; */
+    font-size: 3em;
+}
+* h2 {
+    /* font-size: 10vmin; */
+    font-size: 2em;
+}
+* p {
+    /* font-size: 5vmin; */
+    font-size: 1em;
 }
 
-nav {
+/* ---------------- Header -------------- */
+
+.logo img {
+    height: 10vmin;
+    top: 0;
+    left: 0;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo figcaption  {
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px #000000; 
+}
+
+header nav {
+    margin: auto;
     display: flex;
     background-color: black;
-    height: 100%;
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
+    align-content: center;
+    height: 100%;
 }
 
-/* nav span {
-    background-color: black;
-    display: block;
-    width: max-content;
-    padding: 0.5em;
-    position: relative;
-}
-nav span::after {
-    content: "";
-    color:white;
-    transform: scaleX(0);
+.Main-nav-button {
+    padding: 1em;
+    max-height: 100%;
     display: inline-block;
+    height: 100%;
+}
+
+.Main-nav-button a {
+    position: relative;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+}
+
+.Main-nav-button a:after {
+    content: '';
     position: absolute;
     width: 100%;
+    transform: scaleX(0) scaleY(1);
+    height: 3px;
     bottom: 0;
     left: 0;
+    background-color: #fff;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-in-out;
 }
-nav span:hover::after {
+
+.Main-nav-button a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    width: 100%;
-    transition: transform 0.5s;
 }
-nav span:hover {
-    background-color: burlywood;
-} */
 
+/* ---------- Header slut --------------- */
 
 
 article {
     background-color: green;
     padding: 1em;
-    height: 60vh;
+    min-width: 50vw;
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
-article h1 {
-    font-size: 3em;
+
+/* ----------- Footer ---------- */
+
+footer {
+    padding: 1em;
+    background-color: #333333;
+    color: white;
+    height: max-content;
+}
+footer h1 {
+    font-size: 2em;
     font-weight: bold;
 }
+footer h2 {
+    font-size: 1em;
+}
+footer p {
+    font-size: 1em;
+}
+/* ----------- Footer Slut ---------- */
 
+
+/* ---------------- Sights sektion --------------------- */
 .sights-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 1em;
@@ -88,13 +145,10 @@ article h1 {
     padding-bottom: 10em;
     gap: 2em;
 
-
-
 }
 
 .sights-container h1 {
     color: white;
-    font-size: x-large;
     text-align: center;
     flex: 0 0 100%;
 }
@@ -102,7 +156,7 @@ article h1 {
 .sightlink {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: block;
-    flex-basis: 80%;
+    flex-basis: 30%;
     height: 90%;
     transform: scale(1);
     transition: transform 0.2s ease-out;
@@ -126,17 +180,16 @@ article h1 {
 
 }
 
-.sightlink a:hover {
-    filter: blur(2px);
-}
 
-.sightlink h1 {
-
+.sightlink h2 {
+    color: white;
+    text-align: center;
     padding: 1.5em;
     display: block;
     background-color: #333;
 
 }
+/* ---------------- Sights sektion Slut --------------------- */
 
 .scroll-to-topbtn {
     position: fixed;
@@ -185,47 +238,26 @@ article h1 {
     background-color: cadetblue;
 }
 
-.Main-nav-button {
-    padding: 1.5em;
-    display: inline-block;
 
-}
-
-.Main-nav-button a {
-    position: relative;
-    color: #fff;
-    background-color: black;
-    text-decoration: none;
-}
-
-.Main-nav-button a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0) scaleY(1);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transform-origin: bottom left;
-    transition: transform 0.25s ease-in-out;
-}
-
-.Main-nav-button a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 800px) {
     .sights-container {
         flex-direction: row;
-        flex-wrap: wrap;
-
+        /* flex-wrap: nowrap; */
+        
     }
-
+    html {
+        font-size: 0.7rem;
+    }
+    header {
+        margin: 0;
+    }
+    #btnContainer {
+        display: none;
+    }
     .sightlink {
-        flex-basis: 30%;
+        flex-basis: 90%;
         height: 90%;
     }
 
 }
+
