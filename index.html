@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +9,42 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>HongKong</title>
 </head>
-<body>
-    <header>
-        <figure class="logo">
-                <img src="/img/Flower_Hong_Kong.svg" alt="">
-                <figcaption>Honk Kong</figcaption>
-                
-        </figure>
 
-        <nav id="btnContainer">
-            
-            <span class="Main-nav-button">
-                <a href="/" rel="noopener noreferrer" class="Main-nav-button">Home</a>
-            </span>
-            <span class="Main-nav-button">
-                <a href="/sights/" rel="noopener noreferrer" class="Main-nav-button">sights</a>
-            </span>
-        </nav>
-    </header>
+<body>
+    <header class="topnav" id="myTopnav">
+        <a href="/" class="active"id="homeBtn">
+            <img src="/img/Flag_of_Hong_Kong2.svg" alt="">
+        </a>
+        <a href="/culture/">culture</a>
+        <a href="/traditions/">traditions</a>
+        <a href="/sights/">Sights</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </header>
     <main>
         <article>
             <h1>Huvud introduction</h1>
             <h2>Mobile first eller Desktop first?</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ullam quam rem nostrum, nobis dignissimos aspernatur corrupti cupiditate quibusdam? Harum non vitae molestiae voluptatum sit dicta nulla labore, ea accusantium.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis deleniti ad consequuntur inventore, illum officiis beatae molestias neque quod incidunt, ex, veniam adipisci nisi voluptates modi iusto qui fugiat?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ullam quam rem nostrum, nobis
+                dignissimos aspernatur corrupti cupiditate quibusdam? Harum non vitae molestiae voluptatum sit dicta
+                nulla labore, ea accusantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis deleniti ad consequuntur
+                inventore, illum officiis beatae molestias neque quod incidunt, ex, veniam adipisci nisi voluptates modi
+                iusto qui fugiat?</p>
             <h2>Kanske något i mellan Huvud introdution och sights navigation</h2>
         </article>
         <section class="sights-container">
             <h1>Sights</h1>
             <span id="sight-card-1" class="sightlink">
                 <h2>Skyline</h2>
-                <a href="/sights/#s1" ></a>
-                
+                <a href="/sights/#s1"></a>
+
             </span>
             <span id="sight-card-2" class="sightlink">
                 <h2>Park</h2>
-                <a href="/sights/#s2" ></a>
-                
+                <a href="/sights/#s2"></a>
+
             </span>
             <span id="sight-card-3" class="sightlink">
                 <h2>Big Buddha</h2>
@@ -73,4 +73,5 @@
     </footer>
 </body>
 <script src="src/index.js"></script>
+
 </html>
