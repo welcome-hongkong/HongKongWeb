@@ -1,263 +1,280 @@
-
 html {
-    font-size: 1vmin;  /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
+  font-size: 1vmin; /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
 
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 body {
-    min-width: 250px;
+  min-width: 250px;
 }
 
 .active {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4caf50;
+  color: white;
 }
 
 header {
-    display: flex;
-    width: 100%;
-    max-height: 20vh;
-    height: fit-content;
-    justify-content: center;
-    background-color: #EE1C25;
-    position: relative;
+  display: flex;
+  width: 100%;
+  max-height: 20vh;
+  height: fit-content;
+  justify-content: center;
+  background-color: #ee1c25;
+  position: relative;
 }
 * h1 {
-    /* font-size: 15vmin; */
-    font-size: 3em;
+  /* font-size: 15vmin; */
+  font-size: 3em;
 }
 * h2 {
-    /* font-size: 10vmin; */
-    font-size: 2em;
+  /* font-size: 10vmin; */
+  font-size: 2em;
 }
 * p {
-    /* font-size: 5vmin; */
-    font-size: 1em;
+  /* font-size: 5vmin; */
+  font-size: 1em;
 }
 
 /* ---------------- Header -------------- */
 
 .logo img {
-    height: 10vmin;
-    top: 0;
-    left: 0;
-    filter: brightness(0) invert(1);
-    display: block;
+  height: 10vmin;
+  top: 0;
+  left: 0;
+  filter: brightness(0) invert(1);
+  display: block;
 }
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.logo figcaption  {
-    font-size: 5em;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px #000000; 
+.logo figcaption {
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px #000000;
 }
 
 header nav {
-    margin: auto;
-    display: flex;
-    background-color: black;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-    align-content: center;
-    height: 100%;
+  margin: auto;
+  display: flex;
+  background-color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  align-content: center;
+  height: 100%;
 }
 
 .Main-nav-button {
-    padding: 1em;
-    max-height: 100%;
-    display: inline-block;
-    height: 100%;
+  padding: 1em;
+  max-height: 100%;
+  display: inline-block;
+  height: 100%;
 }
 
 .Main-nav-button a {
-    position: relative;
-    color: #fff;
-    background-color: black;
-    text-decoration: none;
+  position: relative;
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
 }
 
 .Main-nav-button a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0) scaleY(1);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transform-origin: bottom left;
-    transition: transform 0.25s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0) scaleY(1);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-in-out;
 }
 
 .Main-nav-button a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* ---------- Header slut --------------- */
 
-
 article {
-    background-color: green;
-    padding: 1em;
-    min-width: 50vw;
-    color: white;
-    font-size: 2rem;
+  background-color: green;
+  padding: 1em;
+  min-width: 50vw;
+  color: white;
+  font-size: 2rem;
 }
-
 
 /* ----------- Footer ---------- */
 
 footer {
-    padding: 1em;
-    background-color: #333333;
-    color: white;
-    height: max-content;
+  padding: 1em;
+  background-color: #333333;
+  color: white;
+  height: max-content;
 }
 footer h1 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 footer h2 {
-    font-size: 1em;
+  font-size: 1em;
 }
 footer p {
-    font-size: 1em;
+  font-size: 1em;
 }
 /* ----------- Footer Slut ---------- */
 
-
 /* ---------------- Sights sektion --------------------- */
 .sights-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em;
-    background-color: #222;
-    height: max-content;
-    padding-bottom: 10em;
-    gap: 2em;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  background-color: #222;
+  height: max-content;
+  padding-bottom: 10em;
+  gap: 2em;
 }
 
 .sights-container h1 {
-    color: white;
-    text-align: center;
-    flex: 0 0 100%;
+  color: white;
+  text-align: center;
+  flex: 0 0 100%;
 }
 
 .sightlink {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: block;
-    flex-basis: 30%;
-    height: 90%;
-    transform: scale(1);
-    transition: transform 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: block;
+  flex-basis: 30%;
+  height: 90%;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
 }
 
 .sightlink a {
-
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
 }
 
 .sightlink:hover {
-    transform: scale(1.08);
-    transition: transform 0.2s ease-in-out;
-
+  transform: scale(1.08);
+  transition: transform 0.2s ease-in-out;
 }
 
-
 .sightlink h2 {
-    color: white;
-    text-align: center;
-    padding: 1.5em;
-    display: block;
-    background-color: #333;
-
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+  display: block;
+  background-color: #333;
 }
 /* ---------------- Sights sektion Slut --------------------- */
 
 .scroll-to-topbtn {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    --scrollbtn-size: 5em;
-    width: var(--scrollbtn-size);
-    height: var(--scrollbtn-size);
-    background-color: #333;
-    color: white;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  --scrollbtn-size: 5em;
+  width: var(--scrollbtn-size);
+  height: var(--scrollbtn-size);
+  background-color: #333;
+  color: white;
 
-    padding: 0.5em;
-    cursor: pointer;
+  padding: 0.5em;
+  cursor: pointer;
 }
 
 #sight-card-1 a {
-    background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg);
-    background-size: cover;
+  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg);
+  background-size: cover;
 }
 
 #sight-card-2 a {
-    background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-hong-kong-park-pond.jpg);
-    background-size: cover;
-    background-position: right center;
+  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-hong-kong-park-pond.jpg);
+  background-size: cover;
+  background-position: right center;
 }
 
 #sight-card-3 a {
-    background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-big-buddha-and-forest.jpg);
-    background-size: cover;
-    background-position: 70%;
+  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-big-buddha-and-forest.jpg);
+  background-size: cover;
+  background-position: 70%;
 
-    background-origin: content-box;
+  background-origin: content-box;
 }
 
+/* ---------------- Traditions sektion Start --------------------- */
 
+.trads-article {
+  background-color: white;
+  color: black;
+}
+.trads-top {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.trads-title {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.trads-top > img {
+  filter: blur(10px);
+}
+
+/* .trads-h1 {
+  color: black;
+}
+
+.trads-p {
+  color: black;
+} */
+
+/* ---------------- Traditions sektion Slut --------------------- */
 
 #s1 {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 
 #s2 {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 #s3 {
-    background-color: cadetblue;
+  background-color: cadetblue;
 }
-
 
 @media screen and (max-width: 800px) {
-    .sights-container {
-        flex-direction: row;
-        /* flex-wrap: nowrap; */
-        
-    }
-    html {
-        font-size: 0.7rem;
-    }
-    header {
-        margin: 0;
-    }
-    #btnContainer {
-        display: none;
-    }
-    .sightlink {
-        flex-basis: 90%;
-        height: 90%;
-    }
-
+  .sights-container {
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+  }
+  html {
+    font-size: 0.7rem;
+  }
+  header {
+    margin: 0;
+  }
+  #btnContainer {
+    display: none;
+  }
+  .sightlink {
+    flex-basis: 90%;
+    height: 90%;
+  }
 }
-
