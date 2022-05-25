@@ -5,47 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body>div {
-            height: 100vh;
-        }
-
-    </style>
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Sights</title>
 </head>
 
 <body>
-    <header>
-        <figure class="logo">
-                <img src="/img/Flower_Hong_Kong.svg" alt="">
-                <figcaption>Honk Kong</figcaption>
-                
-        </figure>
+    <header class="topnav" id="myTopnav">
 
-        <nav id="btnContainer">
-            
-            <span class="Main-nav-button">
-                <a href="/" rel="noopener noreferrer" class="Main-nav-button">Home</a>
-            </span>
-            <span class="Main-nav-button">
-                <a href="/sights/" rel="noopener noreferrer" class="Main-nav-button">sights</a>
-            </span>
-        </nav>
+        <a href="/" id="homeBtn"></a>
+        <a href="/" >Home</a>
+        <a href="/traditions/">traditions</a>
+        <a href="/sights/" class="active">Sights</a>
+        <a href="/culture/">culture</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
-    
-    <div id="s1">
-        <h1>Sight1</h1>
-    </div>
-    <div id="s2">
-        <h1>Sight2</h1>
-    </div>
-    <div id="s3">
-        <h1>Sight3</h1>
-    </div>
+    <section class="SightSection" id="s1">
+        <article>
+            <img src="https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg"
+                alt="">
+            <div>
+                <h1>Sight1</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nihil obcaecati recusandae omnis
+                    delectus ad numquam id facilis pariatur, minima dolor sequi, neque consectetur ex error perferendis
+                    explicabo dolorem exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nihil quibusdam ea minus aliquam
+                    officia nobis nulla ducimus ab delectus. Hic pariatur debitis beatae error unde, dolorem magni!
+                    Perferendis, error.</p>
+            </div>
+
+        </article>
+    </section>
+    <br>
+    <section class="SightSection" id="s2">
+        <article>
+            <img src="https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg"
+            alt="">
+            <div>
+                <h1>Sight2</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nihil obcaecati recusandae omnis
+                    delectus ad numquam id facilis pariatur, minima dolor sequi, neque consectetur ex error perferendis
+                    explicabo dolorem exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nihil quibusdam ea minus aliquam
+                    officia nobis nulla ducimus ab delectus. Hic pariatur debitis beatae error unde, dolorem magni!
+                    Perferendis, error.</p>
+            </div>
+            
+        </article>
+    </section>
+    <br>
+    <section class="SightSection" id="s3">
+        <article>
+            <img src="https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg"
+                alt="">
+            <div>
+                <h1>Sight3</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nihil obcaecati recusandae omnis
+                    delectus ad numquam id facilis pariatur, minima dolor sequi, neque consectetur ex error perferendis
+                    explicabo dolorem exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nihil quibusdam ea minus aliquam
+                    officia nobis nulla ducimus ab delectus. Hic pariatur debitis beatae error unde, dolorem magni!
+                    Perferendis, error.</p>
+            </div>
+
+        </article>
+    </section>
     <footer>
-        <button class="scroll-to-topbtn" onclick="scrollToTop()">/\</button>
         <h1>Footer</h1>
         <ul>
             <li>
@@ -63,6 +91,6 @@
         </ul>
     </footer>
 </body>
-<script src="src/index.js"></script>
+<script src="/src/index.js"></script>
 
 </html>
