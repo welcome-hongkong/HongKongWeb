@@ -8,62 +8,92 @@
     <title>Traditions</title>
   </head>
   <body class="trads-body">
-    <article class="trads-article trads-top">
-      <h1 class="trads-h1 trads-title">Traditions</h1>
-      <img src="./img/dragon.jpg" alt="Dragon" />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sint
-        commodi asperiores fugit dolor nulla incidunt tempore pariatur quaerat
-        accusamus, voluptas suscipit dolore voluptates cumque, sunt doloribus
-        non temporibus id. Lorem ipsum dolor sit amet consectetur, adipisicing
-        elit. Repellendus, quaerat non. Explicabo amet magni eaque reiciendis
-        quo in quae tenetur, optio sequi velit porro ipsum vel. Nostrum
-        quibusdam labore adipisci.
-      </p>
-    </article>
-    <article class="trads-article trads-new-year">
-      <h2>Chinese New Year</h2>
-      <p class="trads-p">
-        The Lunar New Year is a 15 day festival beginning with the first new
-        moon between the 21st of January and the 20th of February. One of the
-        most popular events during the new year celebrations in Hong Kong is the
-        New Year Parade where you can see things from lung dragons to
-        traditional Chinese dancers. The parade starts at 8pm and goes from
-        Nathan Road to Salisbury Road to Canton Road and finally to Haiphong
-        Road. Unique to Hong Kong new years celebrations is horse racing. The
-        Sha Tin Racecourse is usually filled with around one hundred thousand
-        spectators during these events. The Hong Kong Jockey Club also organises
-        a program of cultural festivities and entertainment. The Spring Lantern
-        Festival marks the end of the Chinese New Year. The whole city is
-        decorated with colourful lanterns and a carnival is held at the Hong
-        Kong Cultural Centre Piazza where you can see impressive lantern
-        displays as well as other performances like dancing and acrobatics.
-      </p>
-    </article>
+    <header class="topnav" id="myTopnav">
+      <a href="/" id="homeBtn"></a>
+      <a href="/">Home</a>
+      <a href="/traditions/" class="active">traditions</a>
+      <a href="/sights/">Sights</a>
+      <a href="/culture/">culture</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+    <main class="trads-main">
+      <article class="trads-article trads-top">
+        <h1 class="trads-h1 trads-title">Traditions</h1>
+        <!-- <img src="./img/dragon.jpg" alt="Dragon" /> -->
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sint
+          commodi asperiores fugit dolor nulla incidunt tempore pariatur quaerat
+          accusamus, voluptas suscipit dolore voluptates cumque, sunt doloribus
+          non temporibus id. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Repellendus, quaerat non. Explicabo amet magni eaque reiciendis
+          quo in quae tenetur, optio sequi velit porro ipsum vel. Nostrum
+          quibusdam labore adipisci.
+        </p>
+      </article>
+      <article class="trads-article trads-new-year">
+        <h2>Chinese New Year</h2>
+        <div>
+          <p class="trads-p">
+            The Lunar New Year is a 15 day festival beginning with the first new
+            moon between the 21st of January and the 20th of February. One of
+            the most popular events during the new year celebrations in Hong
+            Kong is the New Year Parade where you can see things from lung
+            dragons to traditional Chinese dancers. The parade starts at 8pm and
+            goes from Nathan Road to Salisbury Road to Canton Road and finally
+            to Haiphong Road. Unique to Hong Kong new years celebrations is
+            horse racing. The Sha Tin Racecourse is usually filled with around
+            one hundred thousand spectators during these events. The Hong Kong
+            Jockey Club also organises a program of cultural festivities and
+            entertainment. The Spring Lantern Festival marks the end of the
+            Chinese New Year. The whole city is decorated with colourful
+            lanterns and a carnival is held at the Hong Kong Cultural Centre
+            Piazza where you can see impressive lantern displays as well as
+            other performances like dancing and acrobatics.
+          </p>
+          <figure>
+            <img src="./img/fireworks.jpg" alt="Firworks over Hong Kong" />
+            <figcaption>
+              Fireworks display over Hong Kong.
+              <p class="trads-reference">
+                (<a
+                  href="https://commons.wikimedia.org/wiki/File:Kung_Hei_Fat_Choi!_(6834861529).jpg"
+                  >Michael Elleray from England, United Kingdom</a
+                >,
+                <a href="https://creativecommons.org/licenses/by/2.0"
+                  >CC BY 2.0</a
+                >, via Wikimedia Commons)
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
 
-    <article class="trads-article trads trads-tin-hau">
-      <h2>Tin Hau Festival</h2>
-      <p>
-        The Chinese sea goddess Tin Hau has historically been one of the most
-        important gods in Hong Kong. As such, her birthday is accompanied by a
-        grand celebration. While there are many different celebrations around
-        the area the biggest one is in Cha Kwo Ling where people will parade
-        down the streets, some may also dress up as mythological creatures like
-        dragons or qilins and perform traditional dances.
-      </p>
-    </article>
+      <article class="trads-article trads trads-tin-hau">
+        <h2>Tin Hau Festival</h2>
+        <p>
+          The Chinese sea goddess Tin Hau has historically been one of the most
+          important gods in Hong Kong. As such, her birthday is accompanied by a
+          grand celebration. While there are many different celebrations around
+          the area the biggest one is in Cha Kwo Ling where people will parade
+          down the streets, some may also dress up as mythological creatures
+          like dragons or qilins and perform traditional dances.
+        </p>
+      </article>
 
-    <article class="trads-article trads trads-boat">
-      <h2>Dragon Boat Festival</h2>
-      <p>
-        The dragon boat festival is a public holiday in Hong Kong where people
-        race in long canoes made to mimic ancient war boats with up to 80 crew
-        members rowing in the beat to a drum. While there are several races
-        taking place during the festival the CCB Hong Kong International Dragon
-        Boat Races in Victoria Harbour is the most popular with over four
-        thousand participants from all over the world and up to thirty thousand
-        spectators.
-      </p>
-    </article>
+      <article class="trads-article trads trads-boat">
+        <h2>Dragon Boat Festival</h2>
+        <p>
+          The dragon boat festival is a public holiday in Hong Kong where people
+          race in long canoes made to mimic ancient war boats with up to 80 crew
+          members rowing in the beat to a drum. While there are several races
+          taking place during the festival the CCB Hong Kong International
+          Dragon Boat Races in Victoria Harbour is the most popular with over
+          four thousand participants from all over the world and up to thirty
+          thousand spectators.
+        </p>
+      </article>
+    </main>
   </body>
 </html>

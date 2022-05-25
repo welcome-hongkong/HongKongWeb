@@ -1,5 +1,5 @@
 html {
-  font-size: calc(calc(4vh + 4vw + 2vmin) / 15);
+  font-size: calc(calc(4vh + 4vw + 2vmin) / 10);
 
   /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
 
@@ -131,9 +131,9 @@ article {
   color: white;
   font-size: 2em;
 }
-article > h1::after {
+/* article > h1::after {
   content: "Desktop css.";
-}
+} */
 
 /* ----------- Footer ---------- */
 
@@ -267,9 +267,19 @@ footer p {
 
 /* ---------------- Traditions sektion Start --------------------- */
 
+.trads-body {
+  background-color: white;
+  margin: 0;
+}
+
+.trads-main {
+  margin-left: 1%;
+}
+
 .trads-article {
   background-color: white;
   color: black;
+  /* width: 90%; */
 }
 .trads-top {
   display: flex;
@@ -278,22 +288,28 @@ footer p {
 }
 
 .trads-title {
-  font-size: 3em;
   font-weight: bold;
   margin: 0 auto;
 }
 
-.trads-top > img {
-  filter: blur(10px);
+.trads-article div {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* .trads-h1 {
-  color: black;
+.trads-new-year figure img {
+  width: 100%;
 }
 
-.trads-p {
-  color: black;
-} */
+.trads-new-year figure {
+  width: 150%;
+  font-size: 0.8em;
+}
+
+.trads-reference {
+  font-size: 0.6em;
+  margin: 0;
+}
 
 /* ---------------- Traditions sektion Slut --------------------- */
 
