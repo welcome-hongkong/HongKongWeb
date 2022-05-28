@@ -297,11 +297,15 @@ footer p {
   justify-content: space-between;
 }
 
+.trads-article div div{
+  display: block;
+}
+
 .trads-new-year figure img {
   width: 100%;
 }
 
-.trads-new-year figure {
+.trads-article figure {
   width: 150%;
   font-size: 0.8em;
 }
@@ -309,6 +313,23 @@ footer p {
 .trads-reference {
   font-size: 0.6em;
   margin: 0;
+}
+
+.trads-tin-hau figure{
+  width: 50%;
+}
+
+.trads-tin-hau figure img{
+  width: 100%;
+}
+
+.trads-boat figure{
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.trads-boat figure img{
+  width: 100%;
 }
 
 /* ---------------- Traditions sektion Slut --------------------- */
