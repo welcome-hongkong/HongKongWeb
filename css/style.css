@@ -249,9 +249,9 @@ footer p {
     flex-direction: row;
     /* flex-wrap: nowrap; */
   }
-  html {
+  /* html {
     font-size: 0.7rem;
-  }
+  } */
   header {
     margin: 0;
   }
@@ -272,6 +272,15 @@ footer p {
   margin: 0;
 }
 
+.trads-h2 {
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.trads-p {
+  margin: 1em 0;
+}
+
 .trads-main {
   margin-left: 1%;
 }
@@ -280,7 +289,7 @@ footer p {
   background-color: white;
   color: black;
   /* width: 90%; */
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 .trads-top {
   display: flex;
@@ -298,11 +307,10 @@ footer p {
 .trads-top div {
   display: block;
   /* display: flex;
-  flex-direction: column; */
-  text-align: center;
+  flex-direction: column;*/
   backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 0.5);
-  width: 80%;
+  width: 100%;
 }
 
 .trads-title {
@@ -310,10 +318,11 @@ footer p {
   margin: 0 auto;
 }
 
-/* .trads-article div {
+.trads-article div {
   display: flex;
   justify-content: space-between;
-} */
+  align-items: center;
+}
 
 .trads-article div div {
   display: block;
@@ -324,11 +333,12 @@ footer p {
 }
 
 .trads-article figure {
-  float: right;
+  /* float: right; */
   width: 10%;
   font-size: 0.7em;
 
-  float: right;
+  margin: 1em 2em;
+
   min-width: 200px;
 }
 
@@ -353,6 +363,12 @@ footer p {
 
 .trads-boat figure img {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .trads-article div {
+    flex-direction: column-reverse;
+  }
 }
 
 /* ---------------- Traditions sektion Slut --------------------- */
