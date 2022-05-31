@@ -51,6 +51,7 @@ body {
   backdrop-filter: blur(2px);
   background-color: rgba(0, 0, 0, 0.2);
   padding: 2em;
+  width: 80%;
 }
 
 .MainThumbnail div h1 {
@@ -267,9 +268,32 @@ footer p {
 
 /* ---------------- Traditions sektion Start --------------------- */
 
+#trads-card-1 a {
+  background-image: url(../traditions/img/fireworks.jpg);
+  background-size: cover;
+}
+
+#trads-card-2 a {
+  background-image: url(../traditions/img/Tin_Hau.jpg);
+  background-size: cover;
+  background-position: right top;
+}
+
+#trads-card-3 a {
+  background-image: url(../traditions/img/boat.jpg);
+  background-size: cover;
+  background-position: 70%;
+
+  background-origin: content-box;
+}
+
 .trads-body {
   background-color: white;
   margin: 0;
+}
+
+.trads-main {
+  padding-bottom: 10em;
 }
 
 .trads-h2 {
@@ -289,7 +313,7 @@ footer p {
   background-color: white;
   color: black;
   /* width: 90%; */
-  margin-top: 10rem;
+  margin-top: 5em;
 }
 .trads-top {
   display: flex;
@@ -333,18 +357,21 @@ footer p {
 }
 
 .trads-article figure {
-  /* float: right; */
   width: 10%;
   font-size: 0.7em;
 
   margin: 1em 2em;
 
   min-width: 200px;
+  background-color: #f8f9fa;
+  padding: 1em;
+  text-align: center;
+  border: #c8ccd1 solid 1px;
 }
 
 .trads-reference {
   font-size: 0.6em;
-  margin: 0;
+  margin: 0.3em;
 }
 
 .trads-tin-hau figure {
@@ -353,12 +380,12 @@ footer p {
 }
 
 .trads-tin-hau figure img {
-  width: 100%;
+  width: 70%;
 }
 
 .trads-boat figure {
   width: 30%;
-  margin-top: 4rem;
+  margin-top: 2em;
 }
 
 .trads-boat figure img {
