@@ -54,10 +54,11 @@ body {
     background-color: #333;
     position: relative;
     background-image: url(https://live.staticflickr.com/65535/51113116493_34fc3759ae_b.jpg);
-    background-position: 0% 80%;
     justify-content: center;
     align-items: center;
-    z-index: 5;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .MainThumbnail div {
@@ -65,17 +66,20 @@ body {
     backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.2);
     padding: 2em;
+    color: white;
+    font-size: 1.2em;
 }
 
 .MainThumbnail div h1 {
-    /* font-size: 2em; */
     line-height: 1.5em;
     text-align: center;
-
-    /* background-color: rgba(0,0,0,0.5); */
 }
 
-/* ---------------- Header -------------- */
+
+
+/*  Ctrl + Shift + ´ (<- knappen åt vänster om backspace) för att folda texten
+    Ctrl + Shift + Å för att unfolda texten */
+/* #region ---------------- Header -------------- */
 
 .logo {
     width: 100%;
@@ -114,6 +118,7 @@ body {
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #c41921;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Add an active class to highlight the current page */
@@ -137,30 +142,22 @@ body {
 
 }
 
+/* #endregion  */
 
 
 
-
-
-
-
-/* ---------- Header slut --------------- */
-
-
-article {
-    background-color: green;
-    /* padding: 1em; */
-    min-width: 50vw;
-    color: white;
+main {
     font-size: 2em;
 }
-article>h1::after {
+#cssIdentifier::after {
     content: "Desktop css.";
+    
+}
+#cssIdentifier {
+    color: white;
 }
 
-
-/* ----------- Footer ---------- */
-
+/* #region ------------Footer--------------- */
 footer {
     padding: 1em;
     background-color: #333333;
@@ -182,10 +179,10 @@ footer p {
     font-size: 1em;
 }
 
-/* ----------- Footer Slut ---------- */
+/* #endregion */
 
 
-/* ---------------- Sights sektion --------------------- */
+/* #region -------------Sights Section-----------*/
 .sights-container {
     display: flex;
     flex-direction: row;
@@ -262,29 +259,21 @@ footer p {
     background-origin: content-box;
 }
 
-/* ---------------- Sights sektion Slut --------------------- */
-
-.scroll-to-topbtn {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    --scrollbtn-size: 5em;
-    width: var(--scrollbtn-size);
-    height: var(--scrollbtn-size);
-    background-color: #333;
-    color: white;
-
-    padding: 0.1vmin;
-    cursor: pointer;
-}
+/* #endregion */
 
 
 
-/* /Sigths Layout */
+/* #region /Sights/ */
 .SightSection {
     background-color: #222;
 }
 
+.SightSection>article>figure>a {
+    display: block;
+}
+.SightSection>article>figure {
+    display: inline;
+}
 .SightSection article {
     background-color: #292929;
     padding: 1em;
@@ -307,14 +296,39 @@ footer p {
     line-height: normal;
     margin-bottom: 0.5em;
 }
-
-.SightSection article div p {
+.SightSection article div h2 {
+    color: white;
+    flex: 0 0 100%;
+    font-size: 1.1em;
+    line-height: normal;
     margin-bottom: 1em;
 }
 
-.SightSection article img, .SightSection article div {
+.SightSection article div p {
+    margin-bottom: 1em;
+    line-height: normal;
+}
+
+.SightSection article figure img {
+    width: 100%;
+}
+.SightSection article figure, .SightSection article div {
     width: 50%;
 }
+.SightSection span>a, .SightSection span>a:visited {
+    color: #0000ee;
+    
+}
+.SightSection span {
+    display: inline;
+    font-weight: bold;
+}
+.SightSection article figure figcaption  {
+    text-align: center;
+}
+
+
+/* #endregion */
 
 
 
@@ -324,9 +338,9 @@ footer p {
 /* W3: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 500px) {
     
-    article>h1::after {
+    #cssIdentifier::after {
         content: "mobile css.";
 
     }
@@ -373,6 +387,7 @@ footer p {
     .topnav a:hover {
         background-color: #555;
         color: white;
+        transition: all 0.2s ease-in-out;
     }
 
     .topnav.responsive #homeBtn {
@@ -397,10 +412,11 @@ footer p {
 
 
 @media screen and (max-width: 500px) {
-    .SightSection article img, .SightSection article div {
+    .SightSection article figure, .SightSection article div {
         width: 100%;
     }
     .SightSection article {
+        font-size: 3em;
         flex-direction: column;
     }
     .SightSection:nth-of-type(even) article {
