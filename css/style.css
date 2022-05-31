@@ -1,410 +1,545 @@
 html {
-    font-size: calc(calc(4vh + 4vw + 2vmin) / 15);
+  font-size: calc(calc(4vh + 4vw + 2vmin) / 10);
 
-    /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
+  /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
 
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    min-width: 200px;
-    background-color: #333;
-    --redColor: #EE1C25;
+  min-width: 200px;
+  background-color: #333;
+  --redColor: #ee1c25;
 }
 
 .Active {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4caf50;
+  color: white;
 }
 
-
-
 * h1 {
-    /* font-size: 15vmin; */
-    font-size: 3em;
+  /* font-size: 15vmin; */
+  font-size: 3em;
 }
 
 * h2 {
-    /* font-size: 10vmin; */
-    font-size: 2em;
+  /* font-size: 10vmin; */
+  font-size: 2em;
 }
 
 * p {
-    /* font-size: 5vmin; */
-    font-size: 1em;
+  /* font-size: 5vmin; */
+  font-size: 1em;
 }
 
-
-
-
-
-
-
-
-
-
-
 .MainThumbnail {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    background-color: #333;
-    position: relative;
-    background-image: url(https://live.staticflickr.com/65535/51113116493_34fc3759ae_b.jpg);
-    background-position: 0% 80%;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-color: #333;
+  position: relative;
+  background-image: url(https://live.staticflickr.com/65535/51113116493_34fc3759ae_b.jpg);
+  background-position: 0% 80%;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
 }
 
 .MainThumbnail div {
-
-    backdrop-filter: blur(2px);
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 2em;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  width: 80%;
 }
 
 .MainThumbnail div h1 {
-    /* font-size: 2em; */
-    line-height: 1.5em;
-    text-align: center;
+  /* font-size: 2em; */
+  line-height: 1.5em;
+  text-align: center;
 
-    /* background-color: rgba(0,0,0,0.5); */
+  /* background-color: rgba(0,0,0,0.5); */
+}
+
+.MainThumbnail div p{
+  text-align: center;
 }
 
 /* ---------------- Header -------------- */
 
 .logo {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 
-    height: var(--headerPadding);
-    overflow: hidden;
+  height: var(--headerPadding);
+  overflow: hidden;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    height: 7em;
-    background-color: var(--redColor);
-    overflow: hidden;
+  height: 7em;
+  background-color: var(--redColor);
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
-    background-color: var(--redColor);
-    font-size: 2.3em;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    height: 100%;
-    text-transform: capitalize;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  background-color: var(--redColor);
+  font-size: 2.3em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  height: 100%;
+  text-transform: capitalize;
 }
 .topnav a.icon {
-    height: auto;
+  height: auto;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #c41921;
+  background-color: #c41921;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #c41921;
-    color: white;
+  background-color: #c41921;
+  color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-    display: none;
+  display: none;
 }
 
 #homeBtn {
-    padding: 0;
-    padding-bottom: 0;
-    background: url(/img/Flag_of_Hong_Kong2.svg) no-repeat center;
-    background-size: contain;
-    width: 5em;
-    height: inherit;
-
+  padding: 0;
+  padding-bottom: 0;
+  background: url(/img/Flag_of_Hong_Kong2.svg) no-repeat center;
+  background-size: contain;
+  width: 5em;
+  height: inherit;
 }
-
-
-
-
-
-
-
 
 /* ---------- Header slut --------------- */
 
-
 article {
-    background-color: green;
-    /* padding: 1em; */
-    min-width: 50vw;
-    color: white;
-    font-size: 2em;
+  background-color: green;
+  /* padding: 1em; */
+  min-width: 50vw;
+  color: white;
+  font-size: 2em;
 }
-article>h1::after {
-    content: "Desktop css.";
-}
-
+/* article > h1::after {
+  content: "Desktop css.";
+} */
 
 /* ----------- Footer ---------- */
 
 footer {
-    padding: 1em;
-    background-color: #333333;
-    color: white;
-    height: max-content;
-    font-size: 2rem;
+  padding: 1em;
+  background-color: #333333;
+  color: white;
+  height: max-content;
+  font-size: 2rem;
 }
 
 footer h1 {
-    font-size: 2em;
-    font-weight: bold;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 footer h2 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 footer p {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 /* ----------- Footer Slut ---------- */
 
-
 /* ---------------- Sights sektion --------------------- */
 .sights-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em;
-    background-color: #222;
-    height: max-content;
-    padding-bottom: 10em;
-    gap: 2em;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  background-color: #222;
+  height: max-content;
+  padding-bottom: 10em;
+  gap: 2em;
 }
 
 .sights-container h1 {
-    color: white;
-    text-align: center;
-    flex: 0 0 100%;
+  color: white;
+  text-align: center;
+  flex: 0 0 100%;
 }
 
 .sightlink {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: block;
-    flex-basis: 30%;
-    height: 100%;
-    transform: scale(1);
-    transition: transform 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: block;
+  flex-basis: 30%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
 }
 
 .sightlink a {
-
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: calc(calc(20vh + 20vw + 50vmin) / 3);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: calc(calc(20vh + 20vw + 50vmin) / 3);
 }
 
 .sightlink:hover {
-    transform: scale(1.08);
-    transition: transform 0.2s ease-in-out;
-
+  transform: scale(1.08);
+  transition: transform 0.2s ease-in-out;
 }
 
-
 .sightlink h2 {
-    color: white;
-    text-align: center;
-    padding: 1.5em;
-    display: block;
-    background-color: #333;
-
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+  display: block;
+  background-color: #333;
 }
 
 #sight-card-1 a {
-    background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg);
-    background-size: cover;
+  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg);
+  background-size: cover;
 }
 
 #sight-card-2 a {
-    background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-hong-kong-park-pond.jpg);
-    background-size: cover;
-    background-position: right center;
+  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-hong-kong-park-pond.jpg);
+  background-size: cover;
+  background-position: right center;
 }
 
 #sight-card-3 a {
-    background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-big-buddha-and-forest.jpg);
-    background-size: cover;
-    background-position: 70%;
+  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-big-buddha-and-forest.jpg);
+  background-size: cover;
+  background-position: 70%;
 
-    background-origin: content-box;
+  background-origin: content-box;
 }
 
+#s1 {
+  background-color: aquamarine;
+}
+
+#s2 {
+  background-color: blueviolet;
+}
+
+#s3 {
+  background-color: cadetblue;
+}
+
+@media screen and (max-width: 800px) {
+  .sights-container {
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+  }
+  /* html {
+    font-size: 0.7rem;
+  } */
+  header {
+    margin: 0;
+  }
+  #btnContainer {
+    display: none;
+  }
+  .sightlink {
+    flex-basis: 90%;
+    height: 90%;
+  }
+}
 /* ---------------- Sights sektion Slut --------------------- */
 
-.scroll-to-topbtn {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    --scrollbtn-size: 5em;
-    width: var(--scrollbtn-size);
-    height: var(--scrollbtn-size);
-    background-color: #333;
-    color: white;
+/* ---------------- Traditions sektion Start --------------------- */
 
-    padding: 0.1vmin;
-    cursor: pointer;
+#trads-card-1 a {
+  background-image: url(../traditions/img/dragon.jpg);
+  background-size: cover;
+  background-position: 0 10%;
 }
 
+#trads-card-2 a {
+  background-image: url(../traditions/img/big-tin-hau.webp);
+  background-size: cover;
+  background-position: right top;
+}
 
+#trads-card-3 a {
+  background-image: url(../traditions/img/boat_publicdomain.jpg);
+  background-size: 120%;
+  /* background-position: 70%; */
+
+  background-origin: content-box;
+}
+
+.trads-body {
+  /* background-color: white; */
+  background-color: #222;
+  margin: 0;
+}
+
+.trads-main {
+  padding-bottom: 10em;
+}
+
+.trads-h2 {
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.trads-p {
+  margin: 1em 0;
+}
+
+.trads-main {
+  margin-left: 1%;
+}
+
+.trads-article {
+  background-color: #222;
+  color: white;
+  /* width: 90%; */
+  margin-top: 5em;
+}
+.trads-top {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background-image: url(../traditions/img/dragon.jpg);
+  background-size: cover;
+  background-position: center 25%;
+  /* padding-bottom: 20rem; */
+}
+
+.trads-top div {
+  display: block;
+  /* display: flex;
+  flex-direction: column;*/
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.trads-title {
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.trads-article div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trads-article div div {
+  display: block;
+}
+
+.trads-new-year figure img {
+  width: 100%;
+}
+
+.trads-article figure {
+  width: 10%;
+  font-size: 0.7em;
+
+  margin: 1em 2em;
+
+  min-width: 200px;
+  background-color: #333;/* #f8f9fa; */
+  padding: 1em;
+  text-align: center;
+  /* border: #c8ccd1 solid 1px; */
+  border: #444 solid 1px;
+}
+
+.trads-article figure a{
+  color: #c9c5c5;
+}
+
+.trads-reference {
+  font-size: 0.6em;
+  margin: 0.3em;
+}
+
+.trads-tin-hau figure {
+  width: 5%;
+  min-width: 150px !important;
+}
+
+.trads-tin-hau figure img {
+  width: 100%;
+}
+
+.trads-boat figure {
+  width: 30%;
+  margin-top: 2em;
+}
+
+.trads-boat figure img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .trads-article div {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ---------------- Traditions sektion Slut --------------------- */
+
+.scroll-to-topbtn {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  --scrollbtn-size: 5em;
+  width: var(--scrollbtn-size);
+  height: var(--scrollbtn-size);
+  background-color: #333;
+  color: white;
+
+  padding: 0.1vmin;
+  cursor: pointer;
+}
 
 /* /Sigths Layout */
 .SightSection {
-    background-color: #222;
+  background-color: #222;
 }
 
 .SightSection article {
-    background-color: #292929;
-    padding: 1em;
-    min-width: 50vw;
-    color: white;
-    font-size: 2.5rem;
-    display: flex;
-    gap: 2em;
-    flex-direction: row;
-
+  background-color: #292929;
+  padding: 1em;
+  min-width: 50vw;
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  gap: 2em;
+  flex-direction: row;
 }
 .SightSection:nth-of-type(even) article {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .SightSection article div h1 {
-    color: white;
-    flex: 0 0 100%;
-    font-size: 2em;
-    line-height: normal;
-    margin-bottom: 0.5em;
+  color: white;
+  flex: 0 0 100%;
+  font-size: 2em;
+  line-height: normal;
+  margin-bottom: 0.5em;
 }
 
 .SightSection article div p {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-.SightSection article img, .SightSection article div {
-    width: 50%;
+.SightSection article img,
+.SightSection article div {
+  width: 50%;
 }
-
-
-
-
-
 
 /* W3: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 426px) {
-    
-    article>h1::after {
-        content: "mobile css.";
+  article > h1::after {
+    content: "mobile css.";
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
 
-    }
-    .topnav a:not(:first-child) {
-        display: none;
-    }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    background-color: #333;
+    z-index: 2;
+    height: 100%;
+  }
+  .topnav {
+    font-size: 2em;
+  }
+  .topnav.responsive {
+    position: relative;
+    height: 100%;
+  }
 
-    .topnav a.icon {
-        float: right;
-        display: block;
-        background-color: #333;
-        z-index: 2;
-        height: 100%;
-    }
-    .topnav {
-        font-size: 2em;
-    }
-    .topnav.responsive {
-        position: relative;
-        height: 100%;
-    }
-    
-    .topnav.responsive a.icon {
-        height: 1.03em;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+  .topnav.responsive a.icon {
+    height: 1.03em;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        color: white;
-        background-color: #333;
-    }
-    .topnav.responsive a.active {
-        background-color: #555;
-    }
-    .topnav a {
-        z-index: 1;
-        border-radius: 0;
-    }
-    .topnav a:hover {
-        background-color: #555;
-        color: white;
-    }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: white;
+    background-color: #333;
+  }
+  .topnav.responsive a.active {
+    background-color: #555;
+  }
+  .topnav a {
+    z-index: 1;
+    border-radius: 0;
+  }
+  .topnav a:hover {
+    background-color: #555;
+    color: white;
+  }
 
-    .topnav.responsive #homeBtn {
-        float: none;
-        height: 3em;
-        margin: 0;
-    }
+  .topnav.responsive #homeBtn {
+    float: none;
+    height: 3em;
+    margin: 0;
+  }
 
-    .sightlink {
-        flex-basis: 85%;
+  .sightlink {
+    flex-basis: 85%;
+  }
 
-    }
-
-    .sights-container {
-        gap: 5em;
-    }
-    .MainThumbnail {
-        height: 20vh;
-    }
+  .sights-container {
+    gap: 5em;
+  }
+  .MainThumbnail {
+    height: 20vh;
+  }
 }
 
-
-
 @media screen and (max-width: 500px) {
-    .SightSection article img, .SightSection article div {
-        width: 100%;
-    }
-    .SightSection article {
-        flex-direction: column;
-    }
-    .SightSection:nth-of-type(even) article {
-        flex-direction: column;
-    }
-    
+  .SightSection article img,
+  .SightSection article div {
+    width: 100%;
+  }
+  .SightSection article {
+    flex-direction: column;
+  }
+  .SightSection:nth-of-type(even) article {
+    flex-direction: column;
+  }
 }
