@@ -74,7 +74,34 @@ body {
     text-align: center;
 }
 
+.MainThumbnail {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: #333;
+    position: relative;
+    background-image: url(https://live.staticflickr.com/65535/51113116493_34fc3759ae_b.jpg);
+    background-position: 0% 80%;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
 
+.MainThumbnail div {
+
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2em;
+}
+
+.MainThumbnail div h1 {
+    /* font-size: 2em; */
+    line-height: 1.5em;
+    text-align: center;
+
+    /* background-color: rgba(0,0,0,0.5); */
+}
 
 /*  Ctrl + Shift + ´ (<- knappen åt vänster om backspace) för att folda texten
     Ctrl + Shift + Å för att unfolda texten */
@@ -134,12 +161,13 @@ body {
 #homeBtn {
     padding: 0;
     padding-bottom: 0;
-    background: url(/img/Flag_of_Hong_Kong2.svg) no-repeat center;
+    background: url(../img/Flag_of_Hong_Kong2.svg) no-repeat center;
     background-size: contain;
     width: 5em;
     height: inherit;
 
 }
+
 
 /* #endregion  */
 
@@ -155,6 +183,7 @@ main {
 #cssIdentifier {
     font-size: 7rem;
     color: white;
+
 }
 
 /* #region ------------Footer--------------- */
@@ -306,14 +335,17 @@ footer p {
     line-height: normal;
 }
 
+
 .SightSection article figure img {
     width: 100%;
+
 }
 .SightSection article figure, .SightSection article div {
     width: 50%;
     height: fit-content;
 }
 .SightSection figcaption>span, .SightSection figcaption>span>a {
+
 
     color: #666;    
 }
@@ -337,6 +369,7 @@ footer p {
 @media screen and (max-width: 500px) {
     
     #cssIdentifier::after {
+
         content: "mobile css.";
 
     }
@@ -383,6 +416,7 @@ footer p {
     .topnav a:hover {
         background-color: #555;
         color: white;
+
         transition: all 0.2s ease-in-out;
     }
 
@@ -403,8 +437,15 @@ footer p {
     .MainThumbnail {
         height: 20vh;
     }
-}
 
+
+    .sights-container {
+        gap: 5em;
+    }
+    .MainThumbnail {
+        height: 20vh;
+    }
+}
 
 
 @media screen and (max-width: 500px) {
@@ -413,10 +454,13 @@ footer p {
     }
     .SightSection article {
         font-size: 3em;
+
         flex-direction: column;
     }
     .SightSection:nth-of-type(even) article {
         flex-direction: column;
     }
     
+
 }
+
