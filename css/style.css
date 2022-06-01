@@ -1,5 +1,5 @@
 html {
-  font-size: calc(calc(4vh + 4vw + 2vmin) / 10);
+  font-size: calc(calc(4vh + 4vw + 2vmin) / 15);
 
   /* Vad tycker ni om att använda vmin för huvud font-size istället för 16px. vmin gör att font-size är 2.5% av den minsta längden av viewporten. */
 
@@ -37,7 +37,7 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   background-color: #333;
   position: relative;
   background-image: url(https://live.staticflickr.com/65535/51113116493_34fc3759ae_b.jpg);
@@ -64,6 +64,15 @@ body {
 
 .MainThumbnail div p {
   text-align: center;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+}
+
+#MainThumbnail-content {
+  backdrop-filter: initial;
+  background-color: initial;
+  padding: initial;
+  width: initial;
 }
 
 /* ---------------- Header -------------- */
