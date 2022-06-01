@@ -152,7 +152,7 @@ article {
 /* ----------- Footer ---------- */
 
 footer {
-  padding: 1em;
+  padding: 2em;
   background-color: #333333;
   color: white;
   height: max-content;
@@ -168,8 +168,14 @@ footer h2 {
   font-size: 1em;
 }
 
-footer p {
+footer a {
   font-size: 1em;
+  color: #58a6ff;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* ----------- Footer Slut ---------- */
@@ -313,11 +319,14 @@ footer p {
 
 .trads-h2 {
   font-weight: bold;
+  font-size: 2.5em;
   margin: 1em 0;
 }
 
 .trads-p {
+  font-size: 1.5em;
   margin: 1em 0;
+  line-height: 1.3em;
 }
 
 .trads-main {
@@ -373,7 +382,7 @@ footer p {
 
 .trads-article figure {
   width: 10%;
-  font-size: 0.7em;
+  font-size: 1em;
 
   margin: 1em 2em;
 
