@@ -33,10 +33,9 @@ body {
 
 * p {
     /* font-size: 5vmin; */
+    margin-bottom: 1em;
     font-size: 1em;
 }
-
-
 
 
 
@@ -154,6 +153,7 @@ main {
     
 }
 #cssIdentifier {
+    font-size: 7rem;
     color: white;
 }
 
@@ -268,11 +268,8 @@ footer p {
     background-color: #222;
 }
 
-.SightSection>article>figure>a {
-    display: block;
-}
 .SightSection>article>figure {
-    display: inline;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .SightSection article {
     background-color: #292929;
@@ -314,17 +311,16 @@ footer p {
 }
 .SightSection article figure, .SightSection article div {
     width: 50%;
+    height: fit-content;
 }
-.SightSection span>a, .SightSection span>a:visited {
-    color: #0000ee;
-    
-}
-.SightSection span {
-    display: inline;
-    font-weight: bold;
+.SightSection figcaption>span, .SightSection figcaption>span>a {
+
+    color: #666;    
 }
 .SightSection article figure figcaption  {
-    text-align: center;
+    /* text-align: center; */
+    font-size: 0.8em;
+    padding: 1em 1em;
 }
 
 
