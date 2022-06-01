@@ -9,32 +9,28 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Culture | Hong Kong</title>
 </head>
-<body class="culture-body">
+<body class="history-body">
 
-    <header>
-        <figure class="logo">
-                <img src="/img/Flower_Hong_Kong.svg" alt="">
-                <figcaption>Honk Kong</figcaption>
-                
-        </figure>
+    <header class="topnav" id="myTopnav">
 
-        <nav id="btnContainer">
-            
-            <span class="Main-nav-button">
-                <a href="/" rel="noopener noreferrer" class="Main-nav-button">Home</a>
-            </span>
-            <span class="Main-nav-button">
-                <a href="/sights/" rel="noopener noreferrer" class="Main-nav-button">sights</a>
-            </span>
-        </nav>
+        <a href="/" id="homeBtn"></a>
+        <a href="/" class="">Home</a>
+        <a href="/traditions/">traditions</a>
+        <a href="/sights/">Sights</a>
+        <a href="" class="active">Culture</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
 
-    <div class="culture-container-main">
+    <div class="history-container-main">
 
-        <main class="culture-main">
-            <h2 class="culture-main-title">History</h2>
-            <article class="culture-article-1">
-                <p>
+        <main class="history-main">
+            <article class="history-article-0">
+                <h2 class="history-main-title">History</h2>
+            </article>
+            <article class="history-article-1">
+                <p class="history-article-1-text">
                     Hong Kong exists as an administrative region in China. 
                     On July 1, 1997 Britain returned Hong Kong to China and 
                     the region’s relationship with China was established as 
@@ -45,20 +41,28 @@
                     Hong Kong such as the Hong Kong Island, The Kowloon Peninsula 
                     and The New Territories.
                 </p>
+                <div class="history-image-info-1">
+                    <img src="/img/Flag_of_Hong_Kong2.svg" alt="" class="history-flag">
+                    <p class="history-flag-referance"><a href="https://commons.wikimedia.org/wiki/File:Flag_of_Hong_Kong.svg">Designed by Tao HoSVG code of 24 November 2005 version copied from Open Clip ArtSVG code of 20 August 2011 version by AlkariSVG code of 6 September 2021 version by Mike Rohsopht</a>, Public domain, via Wikimedia Commons</p>
+                </div>
             </article>
 
-            <article class="culture-article-2">
-                <p>
+            <article class="history-article-2">
+                <p class="history-article-2-text">
                     The British Empire signed, together with China, on July 1, 1898, 
                     the Second Convention of Peking, which meant Britain was 
                     to lease the regions between Boundary Street and Shenzhen River. 
                     This lease was to expire on the first of July in 1997, 99 years 
                     after the lease was signed.
                 </p>
+                <div class="history-image-info-2">
+                    <img src="/img/MapHongKong.png" alt="" class="history-map">
+                    <p class="history-map-referance"><a href="https://commons.wikimedia.org/wiki/File:Hong_Kong_districts_map.png">Peter Fitzgerald, amendments by Globe-trotter</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</p>
+                </div>
             </article>
 
-            <article class="culture-article-3">
-                <p>
+            <article class="history-article-3">
+                <p class="history-article-3-text">
                     As the expiration day for the lease came closer Britain 
                     decided in 1982 to negotiate the transition of the leased region. 
                     This further led to Britain deciding to return the Kowloon Peninsula 
@@ -67,12 +71,16 @@
                     with the “current social and economic systems”, thus creating 
                     the “one country, two systems” phrase.
                 </p>
+                <div class="history-image-info-3">
+                    <img src="/img/hongkongbritain.webp" alt="" class="history-hong-britain">
+                    <p class="history-hong-britain-referance">Photograph: Pierre-Antoine Donnet/AFP/Getty Images</p>
+                </div>
             </article>
 
         </main>
     </div>
 
-        <footer class="culture-footer">
+        <footer class="history-footer">
 
         </footer>
 </body>

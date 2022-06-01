@@ -1,13 +1,333 @@
 
 
-.culture-body {
+
+
+.history-body {
     width: 100vw;
-    height: 200vh;
+    height: 320vh;
     font-family: Arial, Helvetica, sans-serif;
     background: palevioletred;
 }
 
-.culture-container-main {
+.history-container-main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.history-main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-article-0 {
+    background: none;
+    color: black;
+}
+
+.history-main-title {
+    font-size: 4.5em;
+    align-self: flex-start;
+    margin-top: 1em;
+}
+
+.history-article-1 {
+    background: none;
+    color: black;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    background-color: aliceblue;
+    border: rgb(172, 172, 172) solid 0.2em;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 4em;
+}
+
+.history-article-1-text {
+    font-size: 1.5em;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.history-image-info-1 {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-flag {
+    width: 75%;
+}
+
+.history-flag-referance {
+    font-size: 1.1em;
+    padding-top: 1rem;
+    width: 75%;
+    background-color: beige;
+}
+
+.history-article-2 {
+    background: none;
+    color: black;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: rgb(172, 172, 172) solid 0.2em;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 10rem;
+    height: 30%;
+}
+
+.history-article-2-text {
+    margin-top: 4rem;
+    font-size: 1.5em;
+    width: 70%;
+    height: 10%;
+}
+
+.history-image-info-2 {
+    margin-top: 10rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-map {
+    width: 45%;
+    height: 85%;
+    margin: 0 auto;
+}
+
+.history-map-referance {
+    margin-top: 3rem;
+}
+
+.history-article-3 {
+    background: none;
+    color: black;
+    width: 80%;
+    display: flex;
+    background-color: aliceblue;
+    border: rgb(172, 172, 172) solid 0.2em;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 20%;
+    margin-top: 10rem;
+}
+
+.history-article-3-text {
+    font-size: 1.5em;
+    width: 60%;
+    margin: 2em;
+}
+
+.history-image-info-3 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-hong-britain {
+    width: 78%;
+}
+
+.history-hong-britain-referance {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-left: 2em;
+}
+
+.history-footer {
+    background-color: black;
+    height: 18%;
+}
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+
+    .history-body {
+        height: 450vh;
+    }
+    
+    .history-container-main {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .history-main {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .history-article-0 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .history-article-1 {
+        width: 100%;
+        height: 29%;
+        flex-direction: column;
+    }
+    
+    .history-article-1-text {
+        font-size: 2.8em;
+        width: 85%;
+        height: 100%;
+    }
+    
+    .history-image-info-1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .history-flag {
+        width: 100%;
+    }
+    
+    .history-flag-referance {
+        font-size: 2em;
+        padding-top: 2rem;
+        width: 100%;
+    }
+    
+    .history-article-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        border: rgb(172, 172, 172) solid 0.2em;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 20rem;
+        height: 22%;
+    }
+    
+    .history-article-2-text {
+        font-size: 2.8em;
+        width: 85%;
+        height: 100%;
+        margin-top: 2em;
+    }
+    
+    .history-image-info-2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .history-map {
+        width: 100%;
+        height: 85%;
+        margin: 0 auto;
+    }
+    
+    .history-map-referance {
+        margin-top: 3rem;
+        font-size: 2em;
+    }
+    
+    .history-article-3 {
+        width: 100%;
+        height: 30%;
+        flex-direction: column;
+        margin-top: 20rem;
+    }
+    
+    .history-article-3-text {
+        font-size: 2.8em;
+        width: 85%;
+        margin: 2em;
+        margin-top: 1.5em;
+    }
+    
+    .history-image-info-3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .history-hong-britain {
+        width: 100%;
+    }
+    
+    .history-hong-britain-referance {
+        width: 100%;
+        font-size: 2.8em;
+        margin-left: 2em;
+    }
+    
+    .history-footer {
+        background-color: black;
+        height: 18%;
+        width: 100%;
+    }
+    
+
+}
+
+
+
+/* ---------------------- FOOD ---------------------- */
+
+/* ---------------------- FOOD ---------------------- */
+
+/* ---------------------- FOOD ---------------------- */
+
+
+
+.food-body {
+    width: 100vw;
+    height: 320vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: palevioletred;
+}
+
+.food-container-main {
     width: 100%;
     height: 80%;
     display: flex;
@@ -15,37 +335,42 @@
     justify-content: center ;
 }
 
-.culture-nav {
+.food-main {
     width: 100%;
-    height: 6%;
-    background-color: #EE1C25;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.culture-nav-list {
-
+.food-article-0 {
+    background: none;
+    color: black;
 }
 
-.culture-main {
-    width: 80%;
-    background-color: aquamarine;
+.food-article-1 {
+    background: none;
+    color: black;
 }
 
-.culture-main-title {
-    font-size: 2.5em;
+.food-article-2 {
+    background: none;
+    color: black;
 }
 
-.culture-article-1 {
-
+.food-article-3 {
+    background: none;
+    color: black;
 }
 
-.culture-article-2 {
-    
-}
 
-.culture-article-3 {
-    
-}
 
-.culture-footer {
 
-}
+
+
+
+
+
+
+
