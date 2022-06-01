@@ -62,7 +62,7 @@ body {
   /* background-color: rgba(0,0,0,0.5); */
 }
 
-.MainThumbnail div p{
+.MainThumbnail div p {
   text-align: center;
 }
 
@@ -369,14 +369,14 @@ footer p {
   margin: 1em 2em;
 
   min-width: 200px;
-  background-color: #333;/* #f8f9fa; */
+  background-color: #333; /* #f8f9fa; */
   padding: 1em;
   text-align: center;
   /* border: #c8ccd1 solid 1px; */
   border: #444 solid 1px;
 }
 
-.trads-article figure a{
+.trads-article figure a {
   color: #58a6ff;
 }
 
@@ -526,7 +526,7 @@ footer p {
     gap: 5em;
   }
   .MainThumbnail {
-    height: 20vh;
+    height: 30vh;
   }
 }
 
