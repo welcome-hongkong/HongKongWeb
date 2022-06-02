@@ -5,7 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Sights</title>
@@ -27,9 +77,9 @@
     <section class="SightSection" id="s1">
         <article>
             <figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Hong_Kong_Central_Night_Skyline_from_Victoria_Harbour_-_panoramio.jpg"
+                <img src="../img/Hong_Kong_Central_Night_Skyline_from_Victoria_Harbour_-_panoramio.webp"
                     alt="Picture of the Hong Kong Skyline">
-                <figcaption>
+                <figcaption class="imgCopyrightRef">
                     <span><a
                             href="https://commons.wikimedia.org/wiki/File:Hong_Kong_Central_Night_Skyline_from_Victoria_Harbour_-_panoramio.jpg">Aaron
                             Zhu</a>,
@@ -59,9 +109,9 @@
 
             <figure>
 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Hongkong_-_park_-_panoramio.jpg"
+                <img src="../img/Hongkong_-_park_-_panoramio.webp"
                     alt="Picture of Hong Kong Park">
-                <figcaption>
+                <figcaption class="imgCopyrightRef">
                     <span><a href="https://commons.wikimedia.org/wiki/File:Hongkong_-_park_-_panoramio.jpg">Pavel
                             Špindler</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via
                         Wikimedia Commons</span>
@@ -70,12 +120,7 @@
 
             <div>
                 <h1>Hong Kong Park</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nihil obcaecati recusandae omnis
-                    delectus ad numquam id facilis pariatur, minima dolor sequi, neque consectetur ex error perferendis
-                    explicabo dolorem exercitationem.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nihil quibusdam ea minus aliquam
-                    officia nobis nulla ducimus ab delectus. Hic pariatur debitis beatae error unde, dolorem magni!
-                    Perferendis, error.</p>
+                <p>The beautiful 8 hectare sized park in the city center contains attractions such as an aviary, a green house and a visual art center. The Aviary is home to 80+ bird species freely able to fly around inside the net barrier of the section.</p>
             </div>
 
         </article>
@@ -84,22 +129,21 @@
     <section class="SightSection" id="s3">
         <article>
             <figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Tian_Tan_Buddha_by_Beria.jpg"
+                <img src="../img/1024px-Tian_Tan_Buddha_by_Beria.webp"
                     alt="Picture of Big Buddha Statue in Hong Kong">
-                <figcaption>
-                    <span><a href="https://commons.wikimedia.org/wiki/File:Tian_Tan_Buddha_by_Beria.jpg">Béria L.
+                <figcaption class="imgCopyrightRef">
+                    <span ><a href="https://commons.wikimedia.org/wiki/File:Tian_Tan_Buddha_by_Beria.jpg">Béria L.
                             Rodríguez</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
                         via Wikimedia Commons</span>
                 </figcaption>
             </figure>
             <div>
                 <h1>Big Buddha </h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nihil obcaecati recusandae omnis
-                    delectus ad numquam id facilis pariatur, minima dolor sequi, neque consectetur ex error perferendis
-                    explicabo dolorem exercitationem.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, nihil quibusdam ea minus aliquam
-                    officia nobis nulla ducimus ab delectus. Hic pariatur debitis beatae error unde, dolorem magni!
-                    Perferendis, error.</p>
+                <p>This Statue took 12 years to build and is the biggest statue of Buddha in the world clocking in at 34
+                    meters high. Built in 1993 on Lantau Island’s Po Lin monastery, which is a collection of buildings
+                    that are used by monastics or monks.</p><p> The statue is surrounded by green forest but also has views out
+                    over other islands and water. To get to the Buddha statue, you can either take a bus or a cable car
+                    to the <strong><i>Ngong Ping Village</i></strong> just a walk away from the statue. A worthwhile monument to visit.</p>
             </div>
 
         </article>
