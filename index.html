@@ -1,80 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>HongKong</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="topnav" id="myTopnav">
-
-
-        <a href="./" id="homeBtn"></a>
-        <a href="./" class="active">Home</a>
-        <a href="./traditions/">traditions</a>
-        <a href="./sights/">Sights</a>
-        <a href="./culture/">culture</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+      <a href="./" id="homeBtn"></a>
+      <a href="./" class="active">Home</a>
+      <a href="./traditions/">traditions</a>
+      <a href="./sights/">Sights</a>
+      <a href="./culture/">culture</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </header>
     <main>
-
-        <section class="MainThumbnail">
-            <div>
-                <h1>Hong Kong</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam magnam beatae animi veritatis
-                    corrupti </p>
+      <article>
+        <div class="MainThumbnail">
+          <div>
+            <h2>Hong Kong</h2>
+            <div id="MainThumbnail-content">
+              <p>
+                Hong Kong is a city and special administrative region located in
+                southern China and has a population of 7.4 million people. As a
+                special administrative region Hong Kong has its own government
+                but shares the same president as mainland China, the judicial
+                system in Hong Kong is also closer to its western equivalents
+                than the Chinese system.
+              </p>
+              <p>
+                In 1842 after the First Opium War China ceded Hong Kong to the
+                British, as a result of 100 years of British tyranny English is
+                widely spoken in the city and street signs have both a Chinese
+                and English translation making it perfect for Westerners who
+                might not be too fluent in Chinese.
+              </p>
+              <p>
+                Hong Kong also has a rich cultural heritage with influences from
+                both the east and the west and tourists can experience it all,
+                at least partly, translated into english. There are also many
+                impressive sights to visit and if you're there at the right time
+                you can experience some of Hong Kong's grand festival
+                celebrations.
+              </p>
+              <p>
+                Use the cards below to read more about Hong Kong's sights,
+                culture and traditions.
+              </p>
             </div>
-        </section>
-        <h1 id="cssIdentifier">Just nu är </h1>
-
-        <section class="sights-container">
-            <h1>Sights</h1>
-            <span id="sight-card-1" class="sightlink">
-                <h2>Skyline</h2>
-                <a href="./sights/#s1"></a>
-
-            </span>
-            <span id="sight-card-2" class="sightlink">
-                <h2>Park</h2>
-                <a href="./sights/#s2"></a>
-
-            </span>
-            <span id="sight-card-3" class="sightlink">
-                <h2>Big Buddha</h2>
-                <a href="./sights/#s3"></a>
-            </span>
-        </section>
-
+          </div>
+        </div>
+      </article>
+      <section class="sights-container">
+        <h2>Sights</h2>
+        <div id="sight-card-1" class="sightlink">
+          <h2>Skyline</h2>
+          <a href="./sights/#s1"></a>
+        </div>
+        <div id="sight-card-2" class="sightlink">
+          <h2>Park</h2>
+          <a href="./sights/#s2"></a>
+        </div>
+        <div id="sight-card-3" class="sightlink">
+          <h2>Big Buddha</h2>
+          <a href="./sights/#s3"></a>
+        </div>
+      </section>
+      <section class="sights-container">
+        <h2>Culture</h2>
+        <div id="culture-card-1" class="sightlink">
+          <h2>History</h2>
+          <a href="./culture/#C1"></a>
+        </div>
+        <div id="culture-card-2" class="sightlink">
+          <h2>Religion</h2>
+          <a href="./culture/#C2"></a>
+        </div>
+        <div id="culture-card-3" class="sightlink">
+          <h2>Food</h2>
+          <a href="./culture/#C3"></a>
+        </div>
+      </section>
+      <section class="sights-container">
+        <h2>Traditions</h2>
+        <div id="trads-card-1" class="sightlink">
+          <h2>Chinese New Year</h2>
+          <a href="./traditions/#T1"></a>
+        </div>
+        <div id="trads-card-2" class="sightlink">
+          <h2>Tin Hau Festival</h2>
+          <a href="./traditions/#T2"></a>
+        </div>
+        <div id="trads-card-3" class="sightlink">
+          <h2>Dragon Boat Festival</h2>
+          <a href="./traditions/#T3"></a>
+        </div>
+      </section>
     </main>
     <footer>
-        <h1>Footer</h1>
-        <ul>
-            <li>
-                <p>link 1</p>
-            </li>
-            <li>
-                <p>link 2</p>
-            </li>
-            <li>
-                <p>link 3</p>
-            </li>
-            <li>
-                <p>link 4</p>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <p>&copy; Company Corporation</p>
+        </li>
+        <li>
+          <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"
+            >Terms of Service</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Cock+Island/@53.8376475,-9.3601112,15z/data=!3m1!4b1!4m5!3m4!1s0x48596712e291a56f:0x31d29d9bbfddb735!8m2!3d53.8376357!4d-9.3513564"
+            target="_blank"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="https://www.watching-grass-grow.com/" target="_blank"
+            >Licenses</a
+          >
+        </li>
+        <li>
+          <a href="https://youtu.be/71NAThAf5yw" target="_blank">Privacy</a>
+        </li>
+      </ul>
     </footer>
-</body>
-<script src="./src/index.js"></script>
-
+    <script src="src/index.js"></script>
+  </body>
 </html>
