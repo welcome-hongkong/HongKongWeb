@@ -446,7 +446,7 @@ footer ul {
     background-color: #222;
 }
 
-.SightSection>article>figure {
+.SightSection > article > figure {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
@@ -502,7 +502,7 @@ footer ul {
     width: 50%;
 }
 
-.SightSection figcaption>span, .SightSection figcaption>span>a {
+.SightSection figcaption > span, .SightSection figcaption > span > a {
 
 
     color: #666;
