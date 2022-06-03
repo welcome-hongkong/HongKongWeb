@@ -274,86 +274,6 @@ footer p {
 
 
 
-/* #region /Sights/ */
-.SightSection {
-    background-color: var(--DarkGrayBackground);
-}
-
-.SightSection>article>figure {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.SightSection article {
-    background-color: #292929;
-    padding: 1em;
-    min-width: 50vw;
-    color: white;
-    font-size: 2.8rem;
-    display: flex;
-    gap: 2em;
-    flex-direction: row;
-    position: relative;
-    align-items: stretch;
-
-}
-.SightSection:nth-of-type(even) article {
-    flex-direction: row-reverse;
-}
-
-.SightSection article div h1 {
-    color: white;
-    flex: 0 0 100%;
-    font-size: 2em;
-    line-height: normal;
-    margin-bottom: 0.5em;
-}
-.SightSection article div h2 {
-    color: white;
-    flex: 0 0 100%;
-    font-size: 1.2em;
-    line-height: normal;
-    margin-bottom: 1em;
-}
-
-.SightSection article div p {
-    margin-bottom: 1.1em;
-    line-height: normal;
-}
-
-
-.SightSection article figure img {
-    width: 100%;
-    height: 100%;
-    min-width: 200px;
-    object-fit: cover;
-}
-.SightSection article figure, .SightSection article div {
-    width: 50%;
-    /* height: 100%; */
-    min-height: 100%;
-    /* height: fit-content; */
-}
-.SightSection article figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.SightSection .imgCopyrightRef span, .SightSection .imgCopyrightRef a {
-
-
-    color: #666;    
-}
-.SightSection figcaption { 
-    padding: 0.5em;
-    font-size: 0.8em;
-    font-family: 'Times New Roman', Times, serif;
-}
-.SightSection .imgCopyrightRef span {
-    /* text-align: center; */
-    padding: 1em 1em;
-}
-
-
-/* #endregion */
 
 
 
@@ -448,19 +368,5 @@ footer p {
 }
 
 
-@media screen and (max-width: 500px) {
-    .SightSection article figure, .SightSection article div {
-        width: 100%;
-    }
-    .SightSection article {
-        font-size: 3.4em;
 
-        flex-direction: column;
-    }
-    .SightSection:nth-of-type(even) article {
-        flex-direction: column;
-    }
-    
-
-}
 
