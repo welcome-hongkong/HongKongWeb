@@ -117,8 +117,8 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #c41921;
-    transition: all 0.3s ease-in-out;
+  background-color: #c41921;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Add an active class to highlight the current page */
@@ -184,7 +184,6 @@ footer ul {
 }
 
 /* #endregion */
-
 
 /* #region -------------Sights Section-----------*/
 .sights-container {
@@ -271,14 +270,14 @@ footer ul {
 }
 
 /* @media screen and (max-width: 800px) { */
-  /* .sights-container {
+/* .sights-container {
     flex-direction: row; */
-    /* flex-wrap: nowrap; */
-  
-  /* html {
+/* flex-wrap: nowrap; */
+
+/* html {
     font-size: 0.7rem;
   } */
-  /* header {
+/* header {
     margin: 0;
   }
   #btnContainer {
@@ -453,8 +452,8 @@ footer ul {
   background-color: #222;
 }
 
-.SightSection>article>figure {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.SightSection > article > figure {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .SightSection article {
   background-color: #292929;
@@ -470,176 +469,163 @@ footer ul {
   flex-direction: row-reverse;
 }
 
-.SightSection article div h1 {
+.SightSection article div h2 {
   color: white;
   flex: 0 0 100%;
   font-size: 2em;
   line-height: normal;
   margin-bottom: 0.5em;
 }
-.SightSection article div h2 {
-    color: white;
-    flex: 0 0 100%;
-    font-size: 1.1em;
-    line-height: normal;
-    margin-bottom: 1em;
+.SightSection article div h3 {
+  color: white;
+  flex: 0 0 100%;
+  font-size: 1.1em;
+  line-height: normal;
+  margin-bottom: 1em;
 }
 
 .SightSection article div p {
-    margin-bottom: 1em;
-    line-height: normal;
+  margin-bottom: 1em;
+  line-height: normal;
 }
-
 
 .SightSection article figure img {
-    width: 100%;
-
+  width: 100%;
 }
-.SightSection article figure, .SightSection article div {
-    width: 50%;
-    height: fit-content;
+.SightSection article figure,
+.SightSection article div {
+  width: 50%;
+  height: fit-content;
 }
-.SightSection figcaption>span, .SightSection figcaption>span>a {
-
-
-    color: #666;    
+.SightSection figcaption > span,
+.SightSection figcaption > span > a {
+  color: #666;
 }
-.SightSection article figure figcaption  {
-    /* text-align: center; */
-    font-size: 0.8em;
-    padding: 1em 1em;
+.SightSection article figure figcaption {
+  /* text-align: center; */
+  font-size: 0.8em;
+  padding: 1em 1em;
 }
-
 
 /* #endregion */
 
-
-
 /* ---------------- Culture sektion start --------------------- */
 
-#culture-card-1 a{
-    background-image: url(../img/hongkongbritain.webp);
-    background-size: cover;
-    background-position: center 80%;
-  }
+#culture-card-1 a {
+  background-image: url(../img/hongkongbritain.webp);
+  background-size: cover;
+  background-position: center 80%;
+}
 
-#culture-card-2 a{
-    background-image: url(../img/Confucius_Statue_at_the_Confucius_Temple.jpg);
-    background-size: cover;
-    background-position: center 0em;
-  }
+#culture-card-2 a {
+  background-image: url(../img/Confucius_Statue_at_the_Confucius_Temple.jpg);
+  background-size: cover;
+  background-position: center 0em;
+}
 
-#culture-card-3 a{
-    background-image: url(../img/Fishball.jpg);
-    background-size: cover;
-    background-position: center 1%;
-  }
-
-
+#culture-card-3 a {
+  background-image: url(../img/Fishball.jpg);
+  background-size: cover;
+  background-position: center 1%;
+}
 
 /* ---------------- culture sektion Slut --------------------- */
-
 
 /* W3: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 500px) {
-    
   #cssIdentifier::after {
-
     content: "mobile css.";
-
-}
-.topnav a:not(:first-child) {
+  }
+  .topnav a:not(:first-child) {
     display: none;
-}
+  }
 
-.topnav a.icon {
+  .topnav a.icon {
     float: right;
     display: block;
     background-color: #333;
     z-index: 2;
     height: 100%;
-}
-.topnav {
+  }
+  .topnav {
     font-size: 2em;
-}
-.topnav.responsive {
+  }
+  .topnav.responsive {
     position: relative;
     height: 100%;
-}
+  }
 
-.topnav.responsive a.icon {
+  .topnav.responsive a.icon {
     height: 1.03em;
     position: absolute;
     right: 0;
     top: 0;
-}
+  }
 
-.topnav.responsive a {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
     color: white;
     background-color: #333;
-}
-.topnav.responsive a.active {
+  }
+  .topnav.responsive a.active {
     background-color: #555;
-}
-.topnav a {
+  }
+  .topnav a {
     z-index: 1;
     border-radius: 0;
-}
-.topnav a:hover {
+  }
+  .topnav a:hover {
     background-color: #555;
     color: white;
 
     transition: all 0.2s ease-in-out;
-}
+  }
 
-.topnav.responsive #homeBtn {
+  .topnav.responsive #homeBtn {
     float: none;
     height: 3em;
     margin: 0;
-}
-
-.sightlink {
-    flex-basis: 85%;
-
-}
-
-.sights-container {
-    gap: 5em;
-}
-.MainThumbnail {
-    height: 40vh;
-}
   }
 
-@media screen and (max-width: 500px) {
-    .SightSection article figure, .SightSection article div {
-        width: 100%;
-    }
-    .SightSection article {
-        font-size: 3em;
+  .sightlink {
+    flex-basis: 85%;
+  }
 
-        flex-direction: column;
-    }
-    .SightSection:nth-of-type(even) article {
-        flex-direction: column;
-    }
-
-    #sight-card-3 a {
-      background-position: center 10%;
-    }
-    
-    #culture-card-1 a{
-      background-position: center 50%;
-    }
-
-    #culture-card-3 a{
-      background-position: center 30%;
-    }
-
+  .sights-container {
+    gap: 5em;
+  }
+  .MainThumbnail {
+    height: 40vh;
+  }
 }
 
+@media screen and (max-width: 500px) {
+  .SightSection article figure,
+  .SightSection article div {
+    width: 100%;
+  }
+  .SightSection article {
+    font-size: 3em;
+
+    flex-direction: column;
+  }
+  .SightSection:nth-of-type(even) article {
+    flex-direction: column;
+  }
+
+  #sight-card-3 a {
+    background-position: center 10%;
+  }
+
+  #culture-card-1 a {
+    background-position: center 50%;
+  }
+
+  #culture-card-3 a {
+    background-position: center 30%;
+  }
+}
