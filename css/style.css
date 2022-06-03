@@ -546,6 +546,7 @@ footer ul {
     height: 100%;
     margin-bottom: calc(-4*6em - 3px - 4*2px);
     border-bottom: var(--redColor) solid 3px;
+    top:0;
   }
 
 
