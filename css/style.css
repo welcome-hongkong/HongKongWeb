@@ -35,7 +35,6 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-  min-height: 60vh;
   background-color: #333;
   background: url(https://live.staticflickr.com/65535/51113116493_34fc3759ae_b.jpg) no-repeat center;
   
