@@ -536,7 +536,7 @@ footer ul {
   .topnav.responsive {
     position: sticky;
     height: 100%;
-    margin-bottom: calc(-4*3em - 3px - 4*2px);
+    margin-bottom: calc(-4*6em - 3px - 4*2px);
     border-bottom: var(--redColor) solid 3px;
   }
 
