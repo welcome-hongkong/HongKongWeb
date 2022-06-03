@@ -45,7 +45,6 @@ body {
   background-position: center;
   justify-content: center;
   align-items: center;
-  z-index: 5;
 }
 
 .MainThumbnail div {
@@ -80,17 +79,12 @@ body {
     Ctrl + Shift + Å för att unfolda texten */
 /* #region ---------------- Header -------------- */
 
-.logo {
-  width: 100%;
-  position: relative;
-
-  height: var(--headerPadding);
-  overflow: hidden;
-}
 
 /* Add a black background color to the top navigation */
 .topnav {
-  height: 7em;
+  font-size: 2em;
+  height: 6em;
+  z-index: 1;
   background-color: var(--redColor);
   overflow: hidden;
 }
@@ -98,22 +92,20 @@ body {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 1em;
   text-decoration: none;
   background-color: var(--redColor);
-  font-size: 2.3em;
+  font-size: 2em;
+
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
-  height: 100%;
   text-transform: capitalize;
 }
 .topnav a.icon {
-  height: auto;
+  padding: 0;
 }
-
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #c41921;
@@ -126,6 +118,11 @@ body {
   color: white;
 }
 
+.topnav a.icon i.fa {
+  font-size: 1.5em;
+  /* 8rem */
+}
+
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
@@ -136,22 +133,18 @@ body {
   padding-bottom: 0;
   background: url(../img/Flag_of_Hong_Kong2.svg) no-repeat center;
   background-size: contain;
-  width: 5em;
-  height: inherit;
+  width: 7.5em;
+  height: 3em;
 }
 
 /* ---------- Header slut --------------- */
 
 article {
-  background-color: green;
   /* padding: 1em; */
   min-width: 50vw;
   color: white;
   font-size: 2em;
 }
-/* article > h1::after {
-  content: "Desktop css.";
-} */
 
 /* ----------- Footer ---------- */
 
@@ -452,6 +445,9 @@ footer ul {
 
 .SightSection > article > figure {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .SightSection article {
   background-color: #292929;
@@ -488,19 +484,20 @@ footer ul {
 }
 
 .SightSection article figure img {
+  min-height: 200px;
   width: 100%;
+  object-fit: cover;
+  flex: 1;
 }
 .SightSection article figure,
 .SightSection article div {
   width: 50%;
-  height: fit-content;
 }
 .SightSection figcaption > span,
 .SightSection figcaption > span > a {
   color: #666;
 }
 .SightSection article figure figcaption {
-  /* text-align: center; */
   font-size: 0.8em;
   padding: 1em 1em;
 }
@@ -540,27 +537,18 @@ footer ul {
     display: none;
   }
 
-  .topnav a.icon {
-    float: right;
-    display: block;
-    background-color: #333;
-    z-index: 2;
-    height: 100%;
-  }
+
   .topnav {
     font-size: 2em;
   }
   .topnav.responsive {
-    position: relative;
+    position: sticky;
     height: 100%;
-  }
-
-  .topnav.responsive a.icon {
-    height: 1.03em;
-    position: absolute;
-    right: 0;
+    margin-bottom: calc(-4*6em - 3px - 4*2px);
+    border-bottom: var(--redColor) solid 3px;
     top: 0;
   }
+
 
   .topnav.responsive a {
     float: none;
@@ -569,12 +557,33 @@ footer ul {
     color: white;
     background-color: #333;
   }
+  .topnav.responsive a:not(:first-child) {
+    border: #111 solid 1px;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+  }
   .topnav.responsive a.active {
     background-color: #555;
   }
   .topnav a {
     z-index: 1;
     border-radius: 0;
+  }
+  .topnav a.icon {
+    float: right;
+    display: flex;
+    background-color: #555;
+    z-index: 2;
+    height: 3em;
+    width: 3em;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
   .topnav a:hover {
     background-color: #555;
