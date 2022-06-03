@@ -1,184 +1,181 @@
-
-
 a:visited {
-    color: white;
+  color: white;
 }
 
 a {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-}
-
-
-.culture-container-main {
-    width: 100vw;
-    height: 1000vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #222;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
 }
 
 .culture-container-main {
-    /* width: 100%;
+  width: 100vw;
+  height: 1000vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #222;
+}
+
+.culture-container-main {
+  /* width: 100%;
     height: 95%; */
-    /* display: flex; */
-    margin: 0 auto;
-    /* justify-content: center; */
+  /* display: flex; */
+  margin: 0 auto;
+  /* justify-content: center; */
 }
 
 .culture-main {
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .history-article-0 {
-    background: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    width: 100%;
-    margin-top: 10em;
+  background: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  width: 100%;
+  margin-top: 10em;
 }
 
 .history-main-title {
-    font-size: 4.5em;
-    align-self: flex-start;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    color: white;
+  font-size: 4.5em;
+  align-self: flex-start;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  color: white;
 }
 
 .history-article-1 {
-    background: none;
-    color: white;
-    width: 80%;
-    height: 7%;
-    display: flex;
-    background-color: #333;
-    border: rgb(172, 172, 172) solid 0.2em;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 4em;
-    font-size: 2em;
+  background: none;
+  color: white;
+  width: 80%;
+  height: 7%;
+  display: flex;
+  background-color: #333;
+  border: rgb(172, 172, 172) solid 0.2em;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 4em;
+  font-size: 2em;
 }
 
 .history-article-1-text {
-    font-size: 1.5em;
-    width: 55%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem;
-    line-height: 1.3;
+  font-size: 1.5em;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  line-height: 1.3;
 }
 
 .history-image-info-1 {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .history-flag {
-    width: 75%;
+  width: 75%;
 }
 
 .history-flag-referance {
-    font-size: 1.1em;
-    padding-top: 1rem;
-    width: 75%;
-    background-color: #333;
+  font-size: 1.1em;
+  padding-top: 1rem;
+  width: 75%;
+  background-color: #333;
 }
 
 .history-article-2 {
-    background: none;
-    color: white;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    border: rgb(172, 172, 172) solid 0.2em;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 10rem;
-    height: 10%;
-    font-size: 2em;
+  background: none;
+  color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  border: rgb(172, 172, 172) solid 0.2em;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 10rem;
+  height: 10%;
+  font-size: 2em;
 }
 
 .history-article-2-text {
-    margin-top: 4rem;
-    font-size: 1.5em;
-    width: 70%;
-    height: 10%;
-    line-height: 1.3;
+  margin-top: 4rem;
+  font-size: 1.5em;
+  width: 70%;
+  height: 10%;
+  line-height: 1.3;
 }
 
 .history-image-info-2 {
-    margin-top: 10rem;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 10rem;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .history-map {
-    width: 45%;
-    height: 85%;
-    margin: 0 auto;
+  width: 45%;
+  height: 85%;
+  margin: 0 auto;
 }
 
 .history-map-referance {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .history-article-3 {
-    background: none;
-    color: white;
-    width: 80%;
-    display: flex;
-    background-color: #333;
-    border: rgb(172, 172, 172) solid 0.2em;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    height: 6%;
-    margin-top: 10rem;
-    font-size: 2em;
+  background: none;
+  color: white;
+  width: 80%;
+  display: flex;
+  background-color: #333;
+  border: rgb(172, 172, 172) solid 0.2em;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 6%;
+  margin-top: 10rem;
+  font-size: 2em;
 }
 
 .history-article-3-text {
-    font-size: 1.5em;
-    width: 60%;
-    margin: 2em;
-    line-height: 1.3;
+  font-size: 1.5em;
+  width: 60%;
+  margin: 2em;
+  line-height: 1.3;
 }
 
 .history-image-info-3 {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .history-hong-britain {
-    width: 78%;
+  width: 78%;
 }
 
 .history-hong-britain-referance {
-    width: 100%;
-    font-size: 2.5rem;
-    margin-left: 2em;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-left: 2em;
 }
 
 /* .culture-footer {
@@ -193,157 +190,157 @@ a {
 /* ---------------------- FOOD ---------------------- */
 
 .food-main-title {
-    font-size: 4.5em;
-    align-self: flex-start;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    color: white;
+  font-size: 4.5em;
+  align-self: flex-start;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  color: white;
 }
 
 .food-article-0 {
-    background: none;
-    background-color: #333;
-    color: black;
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    margin-top: 10em;
+  background: none;
+  background-color: #333;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
 }
 
 .food-article-1 {
-    background: none;
-    color: white;
-    margin-top: 4em;
-    background-color: #333;
-    border: solid 2px rgb(172, 172, 172);
-    height: 10%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    font-size: 2em;
-    align-items: center;
+  background: none;
+  color: white;
+  margin-top: 4em;
+  background-color: #333;
+  border: solid 2px rgb(172, 172, 172);
+  height: 10%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  align-items: center;
 }
 
 .food-article-1-text {
-    font-size: 1.5em;
-    width: 90%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 2em;
-    line-height: 1.3;
+  font-size: 1.5em;
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2em;
+  line-height: 1.3;
 }
 
 .food-image-info-1 {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .food-dumplings {
-    width: 75%;
-    margin-top: 2em;
+  width: 75%;
+  margin-top: 2em;
 }
 
 .food-1-referance {
-    font-size: 1.1em;
-    padding-top: 1rem;
-    width: 75%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
+  font-size: 1.1em;
+  padding-top: 1rem;
+  width: 75%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 .food-article-2 {
-    background: none;
-    color: white;
-    border: solid 2px rgb(172, 172, 172);
-    height: 10%;
-    width: 40%;
-    margin-top: 4em;
-    background-color: #333;
-    font-size: 2em;
+  background: none;
+  color: white;
+  border: solid 2px rgb(172, 172, 172);
+  height: 10%;
+  width: 40%;
+  margin-top: 4em;
+  background-color: #333;
+  font-size: 2em;
 }
 
 .food-article-2-text {
-    font-size: 1.5em;
-    width: 85%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    line-height: 1.3;
+  font-size: 1.5em;
+  width: 85%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 1.3;
 }
 
 .food-image-info-2 {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .food-fishballs {
-    width: 45%;
+  width: 45%;
 }
 
 .food-2-referance {
-    font-size: 1.1em;
-    padding-top: 2rem;
-    width: 75%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
+  font-size: 1.1em;
+  padding-top: 2rem;
+  width: 75%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 .food-article-3 {
-    background: none;
-    color: white;
-    margin-top: 4em;
-    border: solid 2px rgb(172, 172, 172);
-    height: 8%;
-    width: 40%;
-    background-color: #333;
-    font-size: 2em;
+  background: none;
+  color: white;
+  margin-top: 4em;
+  border: solid 2px rgb(172, 172, 172);
+  height: 8%;
+  width: 40%;
+  background-color: #333;
+  font-size: 2em;
 }
 
 .food-article-3-text {
-    font-size: 1.5em;
-    width: 85%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 1em;
-    line-height: 1.3;
+  font-size: 1.5em;
+  width: 85%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  line-height: 1.3;
 }
 
 .food-image-info-3 {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4em;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
 }
 
 .food-eggwaffle {
-    width: 40%;
+  width: 40%;
 }
 
 .food-3-referance {
-    font-size: 1.1em;
-    padding-top: 2rem;
-    width: 75%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
+  font-size: 1.1em;
+  padding-top: 2rem;
+  width: 75%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 /* ---------------------- RELIGION ---------------------- */
@@ -353,118 +350,118 @@ a {
 /* ---------------------- RELIGION ---------------------- */
 
 .religion-article-0 {
-    background: none;
-    background-color: #333;
-    color: black;
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    margin-top: 10em;
+  background: none;
+  background-color: #333;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
 }
 
 .religion-main-title {
-    font-size: 4.5em;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    color: white;
+  font-size: 4.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  color: white;
 }
 
 .religion-article-1 {
-    background: none;
-    color: white;
-    margin-top: 4em;
-    background-color: #333;
-    border: solid 2px rgb(172, 172, 172);
-    height: 10%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    font-size: 2em;
-    align-items: center;
+  background: none;
+  color: white;
+  margin-top: 4em;
+  background-color: #333;
+  border: solid 2px rgb(172, 172, 172);
+  height: 10%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  align-items: center;
 }
 
 .religion-article-1-text {
-    font-size: 1.5em;
-    width: 85%;
-    height: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    line-height: 1.3;
+  font-size: 1.5em;
+  width: 85%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 1.3;
 }
 
 .religion-image-info-1 {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .religion-image-1 {
-    width: 50%;
+  width: 50%;
 }
 
 .religion-1-referance {
-    font-size: 1.1em;
-    padding-top: 2rem;
-    width: 75%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
+  font-size: 1.1em;
+  padding-top: 2rem;
+  width: 75%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 .religion-article-2 {
-    background: none;
-    color: white;
-    margin-top: 4em;
-    background-color: #333;
-    border: solid 2px rgb(172, 172, 172);
-    height: 14%;
-    width: 40%;
-    display: flex;
-    font-size: 2em;
-    flex-direction: column;
-    align-items: center;
+  background: none;
+  color: white;
+  margin-top: 4em;
+  background-color: #333;
+  border: solid 2px rgb(172, 172, 172);
+  height: 14%;
+  width: 40%;
+  display: flex;
+  font-size: 2em;
+  flex-direction: column;
+  align-items: center;
 }
 
 .religion-article-2-text {
-    font-size: 1.5em;
-    width: 85%;
-    height: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: -3em;
-    line-height: 1.3;
+  font-size: 1.5em;
+  width: 85%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -3em;
+  line-height: 1.3;
 }
 
 .religion-image-info-2 {
-    width: 100%;
-    height: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .religion-image-2 {
-    width: 50%;
-    margin-top: -2em;
+  width: 50%;
+  margin-top: -2em;
 }
 
 .religion-2-referance {
-    font-size: 1.1em;
-    padding-top: 2rem;
-    width: 40%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
+  font-size: 1.1em;
+  padding-top: 2rem;
+  width: 40%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
-    color: #58a6ff !important;
+  color: #58a6ff !important;
 }
 
 /* ---------------------- RESPONSIVE (FOR MOBILE) ---------------------- */
@@ -474,386 +471,386 @@ footer a {
 /* ---------------------- RESPONSIVE (FOR MOBILE) ---------------------- */
 
 @media (max-width: 426px) {
-    .culture-container-main {
-        height: 1000vh;
-        width: 100vw;
-    }
-    
-    .history-container-main {
-        width: 100%;
-        height: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .culture-main {
-        width: 100%;
-        height: 100%;
-        background-color: #222;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .history-article-0 {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .history-article-1 {
-        width: 100%;
-        height: 15%;
-        flex-direction: column;
-        padding: 0;
-        font-size: 2em;
-    }
-    
-    .history-article-1-text {
-        font-size: 2.8em;
-        width: 85%;
-        height: 100%;
-    }
-    
-    .history-image-info-1 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .history-flag {
-        width: 100%;
-    }
-    
-    .history-flag-referance {
-        margin-top: 6rem;
-        font-size: 2em;
-        width: 80%;
-        margin-right: 4rem;
-        margin-top: 3em;
-    }
-    
-    .history-article-2 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: #333;
-        border: rgb(172, 172, 172) solid 0.2em;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-        margin-top: 20rem;
-        height: 10%;
-        padding: 0;
-        font-size: 2em;
-    }
-    
-    .history-article-2-text {
-        font-size: 2.8em;
-        width: 85%;
-        height: 100%;
-        margin-top: 2em;
-    }
-    
-    .history-image-info-2 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .history-map {
-        width: 100%;
-        height: 85%;
-        margin: 0 auto;
-    }
-    
-    .history-map-referance {
-        margin-top: 6rem;
-        font-size: 2em;
-        width: 80%;
-        margin-bottom: 2em;
-        margin-left: 1em;
-    }
-    
-    .history-article-3 {
-        width: 100%;
-        height: 12.2%;
-        flex-direction: column;
-        margin-top: 20rem;
-        padding: 0;
-        font-size: 2em;
-    }
-    
-    .history-article-3-text {
-        font-size: 2.8em;
-        width: 85%;
-        margin: 0;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        padding: 0;
-    }
-    
-    .history-image-info-3 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .history-hong-britain {
-        width: 100%;
-    }
-    
-    .history-hong-britain-referance {
-        margin-top: 6rem;
-        font-size: 2em;
-        width: 85%;
-        margin-right: 4rem;
-    }
-    
-    .culture-footer {
-        background-color: black;
-        height: 8%;
-        width: 100%;
-        padding: 0;
-    }
+  .culture-container-main {
+    height: 1000vh;
+    width: 100vw;
+  }
 
-    /* ---------------------- FOOD ---------------------- */
+  .history-container-main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+  }
 
-    /* ---------------------- FOOD ---------------------- */
+  .culture-main {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* ---------------------- FOOD ---------------------- */
+  .history-article-0 {
+    display: flex;
+    justify-content: center;
+  }
 
-    .food-main-title {
-        font-size: 4.5em;
-        align-self: flex-start;
-        margin-top: 0.2em;
-        margin-bottom: 0.2em;
-        color: white;
-    }
+  .history-article-1 {
+    width: 100%;
+    height: 15%;
+    flex-direction: column;
+    padding: 0;
+    font-size: 2em;
+  }
 
-    .food-article-0 {
-        background: none;
-        background-color: #333;
-        color: black;
-        width: 100%; 
-        display: flex;
-        justify-content: center;
-        margin-top: 10em;
-    }
+  .history-article-1-text {
+    font-size: 2.8em;
+    width: 85%;
+    height: 100%;
+  }
 
-    .food-article-1 {
-        background: none;
-        color: white;
-        margin-top: 4em;
-        background-color: #333;
-        border: solid 2px rgb(172, 172, 172);
-        height: 8%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .history-image-info-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .food-article-1-text {
-        font-size: 2.8em;
-        width: 85%;
-        height: 50%;
-        margin-top: 0;
-    }
+  .history-flag {
+    width: 100%;
+  }
 
-    .food-image-info-1 {
-        width: 100%;
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .history-flag-referance {
+    margin-top: 6rem;
+    font-size: 2em;
+    width: 80%;
+    margin-right: 4rem;
+    margin-top: 3em;
+  }
 
-    .food-dumplings {
-        width: 100%;
-        margin-top: 2em;
-    }
+  .history-article-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    border: rgb(172, 172, 172) solid 0.2em;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 20rem;
+    height: 10%;
+    padding: 0;
+    font-size: 2em;
+  }
 
-    .food-1-referance {
-        margin-top: 6rem;
-        font-size: 2em;
-        width: 100%;
-    }
+  .history-article-2-text {
+    font-size: 2.8em;
+    width: 85%;
+    height: 100%;
+    margin-top: 2em;
+  }
 
-    .food-article-2 {
-        background: none;
-        color: white;
-        border: solid 2px rgb(172, 172, 172);
-        height: 8%;
-        width: 100%;
-        margin-top: 20rem;
-        background-color: #333;
-    }
+  .history-image-info-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .food-article-2-text {
-        font-size: 2.8em;
-        width: 85%;
-        height: 20%;
-        margin-top: 0;
-    }
+  .history-map {
+    width: 100%;
+    height: 85%;
+    margin: 0 auto;
+  }
 
-    .food-image-info-2 {
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .history-map-referance {
+    margin-top: 6rem;
+    font-size: 2em;
+    width: 80%;
+    margin-bottom: 2em;
+    margin-left: 1em;
+  }
 
-    .food-fishballs {
-        width: 70%;
-    }
+  .history-article-3 {
+    width: 100%;
+    height: 12.2%;
+    flex-direction: column;
+    margin-top: 20rem;
+    padding: 0;
+    font-size: 2em;
+  }
 
-    .food-2-referance {
-        margin-top: 4rem;
-        font-size: 2em;
-        width: 100%;
-    }
+  .history-article-3-text {
+    font-size: 2.8em;
+    width: 85%;
+    margin: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 0;
+  }
 
-    .food-article-3 {
-        background: none;
-        color: white;
-        margin-top: 20rem;
-        border: solid 2px rgb(172, 172, 172);
-        height: 9%;
-        width: 100%;
-        background-color: #333;
-    }
+  .history-image-info-3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .food-article-3-text {
-        font-size: 2.8em;
-        width: 85%;
-        height: 35%;
-        margin-top: 0;
-    }
+  .history-hong-britain {
+    width: 100%;
+  }
 
-    .food-image-info-3 {
-        width: 100%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 4em;
-    }
+  .history-hong-britain-referance {
+    margin-top: 6rem;
+    font-size: 2em;
+    width: 85%;
+    margin-right: 4rem;
+  }
 
-    .food-eggwaffle {
-        width: 100%;
-    }
+  .culture-footer {
+    background-color: black;
+    height: 8%;
+    width: 100%;
+    padding: 0;
+  }
 
-    .food-3-referance {
-        margin-top: 6rem;
-        font-size: 2em;
-        width: 100%;
-    }
+  /* ---------------------- FOOD ---------------------- */
 
-    /* ---------------------- RELIGION ---------------------- */
+  /* ---------------------- FOOD ---------------------- */
 
-    /* ---------------------- RELIGION ---------------------- */
+  /* ---------------------- FOOD ---------------------- */
 
-    /* ---------------------- RELIGION ---------------------- */
+  .food-main-title {
+    font-size: 4.5em;
+    align-self: flex-start;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    color: white;
+  }
 
-    .religion-article-0 {
-        background: none;
-        background-color: #333;
-        color: black;
-        width: 100%; 
-        display: flex;
-        justify-content: center;
-        margin-top: 10em;
-    }
+  .food-article-0 {
+    background: none;
+    background-color: #333;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+  }
 
-    .religion-main-title {
-        font-size: 4.5em;
-        margin-top: 0.2em;
-        margin-bottom: 0.2em;
-        color: white;
-    }
+  .food-article-1 {
+    background: none;
+    color: white;
+    margin-top: 4em;
+    background-color: #333;
+    border: solid 2px rgb(172, 172, 172);
+    height: 8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .religion-article-1 {
-        background: none;
-        color: white;
-        margin-top: 4em;
-        background-color: #333;
-        border: solid 2px rgb(172, 172, 172);
-        height: 10%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .food-article-1-text {
+    font-size: 2.8em;
+    width: 85%;
+    height: 50%;
+    margin-top: 0;
+  }
 
-    .religion-article-1-text {
-        font-size: 2.8em;
-        width: 85%;
-        height: 100%;
-    }
+  .food-image-info-1 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .religion-image-info-1 {
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .food-dumplings {
+    width: 100%;
+    margin-top: 2em;
+  }
 
-    .religion-image-1 {
-        width: 50%;
-    }
+  .food-1-referance {
+    margin-top: 6rem;
+    font-size: 2em;
+    width: 100%;
+  }
 
-    .religion-1-referance {
-        margin-top: 6rem;
-        font-size: 2em;
-        width: 100%;
-    }
+  .food-article-2 {
+    background: none;
+    color: white;
+    border: solid 2px rgb(172, 172, 172);
+    height: 8%;
+    width: 100%;
+    margin-top: 20rem;
+    background-color: #333;
+  }
 
-    .religion-article-2 {
-        background: none;
-        color: white;
-        margin-top: 20rem;
-        background-color: #333;
-        border: solid 2px rgb(172, 172, 172);
-        height: 14%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .food-article-2-text {
+    font-size: 2.8em;
+    width: 85%;
+    height: 20%;
+    margin-top: 0;
+  }
 
-    .religion-article-2-text {
-        font-size: 2.8em;
-        width: 85%;
-        height: 35%;
-        margin-top: 1em;
-    }
+  .food-image-info-2 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .religion-image-info-2 {
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .food-fishballs {
+    width: 70%;
+  }
 
-    .religion-image-2 {
-        width: 80%;
-        margin-top: 4em;
-    }
+  .food-2-referance {
+    margin-top: 4rem;
+    font-size: 2em;
+    width: 100%;
+  }
 
-    .religion-2-referance {
-        font-size: 2em;
-        width: 70%;
-        margin-top: 2rem;
-    }
+  .food-article-3 {
+    background: none;
+    color: white;
+    margin-top: 20rem;
+    border: solid 2px rgb(172, 172, 172);
+    height: 9%;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .food-article-3-text {
+    font-size: 2.8em;
+    width: 85%;
+    height: 35%;
+    margin-top: 0;
+  }
+
+  .food-image-info-3 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+  }
+
+  .food-eggwaffle {
+    width: 100%;
+  }
+
+  .food-3-referance {
+    margin-top: 6rem;
+    font-size: 2em;
+    width: 100%;
+  }
+
+  /* ---------------------- RELIGION ---------------------- */
+
+  /* ---------------------- RELIGION ---------------------- */
+
+  /* ---------------------- RELIGION ---------------------- */
+
+  .religion-article-0 {
+    background: none;
+    background-color: #333;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+  }
+
+  .religion-main-title {
+    font-size: 4.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    color: white;
+  }
+
+  .religion-article-1 {
+    background: none;
+    color: white;
+    margin-top: 4em;
+    background-color: #333;
+    border: solid 2px rgb(172, 172, 172);
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .religion-article-1-text {
+    font-size: 2.8em;
+    width: 85%;
+    height: 100%;
+  }
+
+  .religion-image-info-1 {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .religion-image-1 {
+    width: 50%;
+  }
+
+  .religion-1-referance {
+    margin-top: 6rem;
+    font-size: 2em;
+    width: 100%;
+  }
+
+  .religion-article-2 {
+    background: none;
+    color: white;
+    margin-top: 20rem;
+    background-color: #333;
+    border: solid 2px rgb(172, 172, 172);
+    height: 14%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .religion-article-2-text {
+    font-size: 2.8em;
+    width: 85%;
+    height: 35%;
+    margin-top: 1em;
+  }
+
+  .religion-image-info-2 {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .religion-image-2 {
+    width: 80%;
+    margin-top: 4em;
+  }
+
+  .religion-2-referance {
+    font-size: 2em;
+    width: 70%;
+    margin-top: 2rem;
+  }
 }
