@@ -198,80 +198,6 @@ footer ul {
 /* #endregion -------- Footer Slut ------- */
 
 
-/* #region /Sights/ */
-.SightSection {
-    background-color: #222;
-}
-
-.SightSection>article>figure {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.SightSection article {
-    background-color: #292929;
-    padding: 1em;
-    min-width: 50vw;
-    color: white;
-    font-size: 3em;
-    display: flex;
-    gap: 2em;
-    flex-direction: row;
-}
-
-.SightSection:nth-of-type(even) article {
-    flex-direction: row-reverse;
-}
-
-.SightSection article div h1 {
-    color: white;
-    flex: 0 0 100%;
-    font-size: 2em;
-    line-height: normal;
-    margin-bottom: 0.5em;
-}
-
-.SightSection article div h2 {
-    color: white;
-    flex: 0 0 100%;
-    font-size: 1.1em;
-    line-height: normal;
-    margin-bottom: 1em;
-}
-
-.SightSection article div p {
-    margin-bottom: 1em;
-    line-height: normal;
-}
-
-
-.SightSection article figure img {
-    min-height: 200px;
-    width: 100%;
-    object-fit: cover;
-    flex: 1;
-
-}
-
-.SightSection article figure, .SightSection article div {
-    width: 50%;
-}
-
-.SightSection figcaption>span, .SightSection figcaption>span>a {
-
-
-    color: #666;
-}
-
-.SightSection article figure figcaption {
-    font-size: 0.8em;
-    padding: 1em 1em;
-}
-
-
-/* #endregion */
 
 /* #region -------------Sights Section-----------*/
 
@@ -515,6 +441,80 @@ footer ul {
 }
 
 /* #endregion ------- Traditions sektion Slut --------------------- */
+/* #region /Sights/ */
+.SightSection {
+    background-color: #222;
+}
+
+.SightSection>article>figure {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SightSection article {
+    background-color: #292929;
+    padding: 1em;
+    min-width: 50vw;
+    color: white;
+    font-size: 3em;
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+}
+
+.SightSection:nth-of-type(even) article {
+    flex-direction: row-reverse;
+}
+
+.SightSection article div h1 {
+    color: white;
+    flex: 0 0 100%;
+    font-size: 2em;
+    line-height: normal;
+    margin-bottom: 0.5em;
+}
+
+.SightSection article div h2 {
+    color: white;
+    flex: 0 0 100%;
+    font-size: 1.1em;
+    line-height: normal;
+    margin-bottom: 1em;
+}
+
+.SightSection article div p {
+    margin-bottom: 1em;
+    line-height: normal;
+}
+
+
+.SightSection article figure img {
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    flex: 1;
+
+}
+
+.SightSection article figure, .SightSection article div {
+    width: 50%;
+}
+
+.SightSection figcaption>span, .SightSection figcaption>span>a {
+
+
+    color: #666;
+}
+
+.SightSection article figure figcaption {
+    font-size: 0.8em;
+    padding: 1em 1em;
+}
+
+
+/* #endregion */
 
 
 
