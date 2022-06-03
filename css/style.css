@@ -39,8 +39,7 @@ body {
   width: 100%;
   height: 60vh;
   background-color: #333;
-  position: relative;
-  background-image: url(https://live.staticflickr.com/65535/51113116493_34fc3759ae_b.jpg);
+  background-image: url(../img/main_Thumbnail.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -239,21 +238,20 @@ footer ul {
 }
 
 #sight-card-1 a {
-  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-victoria-peak-view-over-harbor.jpg);
+  background-image: url(../img/Hong_Kong_Central_Night_Skyline_from_Victoria_Harbour_-_panoramio.webp);
   background-size: cover;
 }
 
 #sight-card-2 a {
-  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-hong-kong-park-pond.jpg);
+  background-image: url(../img/Hongkong_-_park_-_panoramio.webp);
   background-size: cover;
   background-position: right center;
 }
 
 #sight-card-3 a {
-  background-image: url(https://www.planetware.com/wpimages/2018/10/hong-kong-attractions-big-buddha-and-forest.jpg);
+  background-image: url(../img/1024px-Tian_Tan_Buddha_by_Beria.webp);
   background-size: cover;
-  background-position: 70%;
-
+  background-position: 100% 10%;
   background-origin: content-box;
 }
 
